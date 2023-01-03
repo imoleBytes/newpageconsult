@@ -17,12 +17,12 @@ body{
     /* launchStyles ends */
 }
 
-
+/* header starts here */
 header{
     background-color: white;
     font-size: large;
     border-top-color: #e52f37;
-    border-top-width: 2px;
+    border-top-width: 1px;
     border-top-style: solid;
 }
 .header{
@@ -31,7 +31,7 @@ header{
     justify-content:space-between;
     height: 90px;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
     /* justify-items: center; */
 }
@@ -76,4 +76,73 @@ header{
 }
 .header button:hover{
     cursor: pointer;
+}
+/* header ends here */
+
+/* Hero starts here */
+
+
+.hero{
+    background-color:burlywood;
+    display: flex;
+    /* justify-content:space-between; */
+    /* height: 90px; */
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 50px;
+    /* justify-items: center; */
+}
+.hero-left{
+    width: 50%;
+}
+.hero-left h1{
+    font-size: 40px;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hero-left span{
+    color: #e52f37;
+}
+
+.hero-left p{
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.hero-left button{
+    /* font-weight: bold; */
+    font-size: large;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #e52f37;
+    border-style: none;
+    color: white;
+
+}
+.hero-left button span{
+    color: white;
+    display: inline-block;
+    margin-left: 20px;
+    font-size:xx-large;
+}
+
+.hero-right{
+    display: flex;
+    background-color: #04284d;
+    width: 50%;
+    height: 70%;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+/* hero ends here */
+
+.services{
+    background-color: bisque;
+    width: 70%;
+    margin: auto;
+    text-align: center;
 }
