@@ -233,7 +233,7 @@ header{
 /* Subject section */
 
 .subjects{
-    background-color: grey;
+    /* background-color: grey; */
     width: 70%;
     margin: auto;
     margin-bottom: 100px;
@@ -269,3 +269,97 @@ header{
     color: rgb(240, 222, 222);
     font-style: italic;
 }
+
+/* Testimonial section */
+
+.testimonial{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+}
+.testimonial .left{
+align-self: center;
+}
+.testimonial .left h1{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.left p{
+    font-size: large;
+    font-weight: 400;
+}
+.testimony{
+    background-color: white;
+    margin: 12px;
+    padding: 20px;
+    border-left: #27b36a 5px solid;
+    /* 27b36a green */
+}
+.testimony p{
+    font-size: 20px;
+    font-style: oblique;
+}
+.details{
+    display: flex;
+    align-items:center;
+}
+.details .author-img{
+    width: 50px;
+    height: 50px;
+    background-color: #04284d;
+    margin-right: 10px;
+    border-radius: 100px;
+    border-style: none;
+}
+.details img{
+    width: inherit;
+    border-radius: 100px;
+    border-style: none;
+}
+
+/* Team Section */
+.our-team{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.our-team .cards{
+    display: flex;
+    gap: 20px;
+    justify-content:center
+}
+.our-team .card{
+    background-color: white;
+    width: 256px;
+}
+
+.our-team .img{
+    width: 256px;
+    height: 256px;
+    background-color: #04284d;
+    margin-bottom: 20px;
+}
+
+.our-team img{
+    width: inherit;
+}
+
+.our-team h1{
+    font-size: xx-large;
+}
+.our-team p{
+    font-size: 20px;
+    /* font-style: oblique; */
+}
+hr{
+    /* margin-top: 20px;
+    margin-bottom: 50px; */
+    width: 50px;
+    border: #e52f37 1px solid;
+    margin: 20px auto;
+    /* background-color: black; */
+}
+
