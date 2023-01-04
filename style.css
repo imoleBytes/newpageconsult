@@ -4,6 +4,12 @@
     box-sizing: border-box;
     /* font-family:'Courier New', Courier, monospace; */
 }
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: rgb(233, 238, 241);
 
@@ -175,4 +181,49 @@ header{
 #card3 .icon{
     background-color:#27b36a;
 
+}
+
+/* Steps Section */
+
+.steps{
+    /* background-color: #e52f37; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    /* justify-content:space-between; */
+    /* justify-items:center; */
+    /* height: 90px; */
+    /* align-items: center; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding: 10px; */
+}
+
+
+.steps-left{
+    width: 50%;
+}
+.step{
+    display: flex;
+    margin: 10px;
+}
+.step .icon{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 50%;
+}
+.inner-step{
+    margin-left: 20px;
+}
+
+.steps-right{
+    display: flex;
+    background-color: #04284d;
+    width: 50%;
+    /* height: 300px; */
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
 }
