@@ -31,7 +31,7 @@ header{
     justify-content:space-between;
     height: 90px;
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
     /* justify-items: center; */
 }
@@ -83,12 +83,12 @@ header{
 
 
 .hero{
-    background-color:burlywood;
+    /* background-color:burlywood; */
     display: flex;
     /* justify-content:space-between; */
     /* height: 90px; */
     align-items: center;
-    width: 80%;
+    width: 70%;
     height: 80vh;
     margin: auto;
     margin-top: 50px;
@@ -139,10 +139,40 @@ header{
     justify-content: center;
 }
 /* hero ends here */
-
+.services-wraper{
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background-color: rgb(209, 216, 214);
+}
 .services{
-    background-color: bisque;
-    width: 70%;
+    /* background-color: bisque; */
+    width: 60%;
     margin: auto;
     text-align: center;
+    padding-bottom: 50px;
+}
+.cards{
+    display: flex;
+    margin-top: 40px;
+}
+.cards .icon{
+    width: 80px;
+    height:80px;
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#card1 .icon{
+    background-color: #1e90ff;
+}
+#card2 .icon{
+    background-color: #e52f37;
+}
+#card3 .icon{
+    background-color:#27b36a;
+
 }
