@@ -352,6 +352,7 @@ align-self: center;
 }
 .our-team p{
     font-size: 20px;
+    padding: 10px;
     /* font-style: oblique; */
 }
 hr{

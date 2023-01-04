@@ -303,10 +303,52 @@
                 </div>
             </div>
         </section>
+
+        <section class="contact-wraper">
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <h5>Have any queries? Get in touch today.</h5>
+                
+                <!-- <p class="contact_success_box" style="display:none;">We received your message and you will hear from us soon. Thank You!</p> -->
+                <form action="" method="post">              
+                    <div>
+                        <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
+                    
+                        <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">                    
+                    </div>
+
+                    <div>
+                        <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                    
+                        <select class="contact-input" required="" name="contact_ticket">
+
+                            <option value="">Choose Enquiry As: </option>
+
+                            <option value="Student">Student</option>
+
+                            <option value="Tutor">Tutor</option>
+
+                            <option value="Parent/Guardian">Parent/Guardian</option>
+
+                            <option value="Other">Other</option>
+
+                        </select>                    
+                    </div>
+        
+                    <div>
+
+                        <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
+
+                        <input value="Get In Touch" class="contact-submit" type="submit">
+                    
+                    </div>    
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        
     </footer>
 
 </body>
