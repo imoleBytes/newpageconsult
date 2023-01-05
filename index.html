@@ -16,9 +16,9 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="">Contact Us</a></li>
-                    <li><a href="">Testimonials</a></li>                    
+                    <li><a href="#testimo">Testimonials</a></li>                    
                     <li><a href="">Tutors</a></li>
                 </ul>
                 <button>Book Now</button>
@@ -29,7 +29,7 @@
 <!-- main body starts here -->
     <main>
 
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="hero-left">
                 <h5>PERFECT SOLUTION FOR YOUR EDUCATION</h5>
                 <h1>
@@ -47,7 +47,7 @@
             </div>
         </section>
 
-        <div class="services-wraper">
+        <div class="services-wraper" id="services">
             <section class="services">
                 <h1>What We Do</h1>
                 <h3>Discover how our amazing team can help you</h3>
@@ -208,9 +208,9 @@
                 </div>
                 
             </div>
-        </section> -->
+        </section>
 
-        <section class="testimonial-wraper">
+        <section class="testimonial-wraper" id="testimo">
             <div class="testimonial">
                 <div class="left">
                     <h1>What People Are Saying.</h1>
@@ -311,13 +311,13 @@
                 
                 <!-- <p class="contact_success_box" style="display:none;">We received your message and you will hear from us soon. Thank You!</p> -->
                 <form action="" method="post">              
-                    <div>
+                    <div class="inner">
                         <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
                     
-                        <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">                    
+                        <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
                     </div>
 
-                    <div>
+                    <div class="inner">
                         <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
                     
                         <select class="contact-input" required="" name="contact_ticket">
@@ -335,7 +335,7 @@
                         </select>                    
                     </div>
         
-                    <div>
+                    <div id="textarea">
 
                         <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
 
@@ -348,7 +348,8 @@
     </main>
 
     <footer>
-        
+        <div>© 2023 Newpage Educational Consult.</div>
+        <div>Follw us: FB TW IG WH GM</div>
     </footer>
 
 </body>
