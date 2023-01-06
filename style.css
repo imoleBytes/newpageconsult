@@ -374,14 +374,17 @@ align-self: center;
 }
 .testimony{
     background-color: white;
-    margin: 12px;
+    margin-bottom: 50px;
     padding: 20px;
-    border-left: #27b36a 5px solid;
+    /* border-left: #27b36a 5px solid; */
+    border-left: #27b36a 2px solid;
+    border-bottom: #e52f37 2px solid;
     /* 27b36a green */
 }
 .testimony p{
     font-size: 20px;
     font-style: oblique;
+    margin-bottom: 10px;
 }
 .details{
     display: flex;
