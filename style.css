@@ -204,9 +204,9 @@ header{
     margin-top: 40px;
     gap: 100px;
 }
-.cards .card .icon h4{
+/* .cards .card .icon h4{
     margin-bottom: 20px;
-}
+} */
 .cards .icon{
     width: 80px;
     height:80px;

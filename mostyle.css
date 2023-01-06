@@ -151,5 +151,68 @@
         border-radius:0%;
     }
 
+    /* services */
+
+    .services-wraper{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        /* background-color: rgb(209, 216, 214); */
+        background-color: #e3f1f8;
+
+    }
+    .services{
+        /* background-color: bisque; */
+        width: 80%;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .services h1{
+        font-size: xx-large;
+    }
+    .services .cards{
+        display: block;
+        margin-top: 30px;
+    }
+    .services .card{
+        height: 40vh;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        /* padding-bottom: 20px; */
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    .services .card h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .services .card p{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .cards .icon{
+        width: 80px;
+        height:80px;
+        display: flex;
+        border-radius: 20px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    #card1 .icon{
+        background-color: #1e90ff;
+    }
+    #card2 .icon{
+        background-color: #e52f37;
+    }
+    #card3 .icon{
+        background-color:#27b36a;
+    
+    }
+
 
 }
