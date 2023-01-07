@@ -60,7 +60,7 @@
     .hero-wraper{
         padding: 0;
         /* background-color: #27b36a; */
-        background:url("./images/img/books.jpg");
+        /* background:url("./images/img/books.jpg"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
