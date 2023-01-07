@@ -338,5 +338,44 @@
         display: flex;
     }
 
+    /* Team section */
+
+    .our-team{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .our-team .cards{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .our-team .card{
+        background-color: white;
+        width: 156px;
+        border: #04284d 1px solid;
+    }
+    
+    .our-team .img{
+        width: 156px;
+        height: 156px;
+        background-color: #04284d;
+        margin-bottom: 20px;
+    }
+    
+    /* contact */
+
+    .contact-us{
+        width: 100%;
+        /* background-color: wheat; */
+        margin: 0;
+        height: auto;
+    }
+
+    form .contact-input{
+        width: 100%;        
+    }
 
 }

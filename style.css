@@ -460,38 +460,45 @@ hr{
 .contact-wraper{
     background-color: #e52f37;
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .contact-us{
     width: 50%;
     /* background-color: wheat; */
     margin: auto;
-    height: 70vh;
+    /* height: 70vh; */
 }
 .contact-us h1{
     text-align: center;
-    font-size: 30px;
+    font-size: xx-large;
     color: white;
     /* margin-top: 100px; */
 }
 .contact-us h5{
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: white;
     font-size: large;
 }
 
+form .inner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 form .contact-input{
-    width: 400px;
+    width: 45%;
     height: 50px;
     border-radius: 10px;
     padding: 10px;
     font-size: large;
-    border: white 5px solid;
-    background-color:unset;
-    color: white;
+    font-weight: 700;
+    border: white 2px solid;
+    background-color:gainsboro;
+    /* color: white; */
     text-decoration-color: white;
 
     /* display: flex; */
