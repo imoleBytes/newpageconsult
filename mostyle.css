@@ -174,13 +174,13 @@
         margin-top: 30px;
     }
     .services .card{
-        height: 40vh;
+        /* height: 40vh; */
         background-color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 50px;
-        /* padding-bottom: 20px; */
-        border-radius: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
         margin-bottom: 20px;
     }
     .services .card h4{
@@ -188,7 +188,7 @@
         margin-bottom: 10px;
     }
     .services .card p{
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 0;
     }
 
@@ -196,7 +196,7 @@
         width: 80px;
         height:80px;
         display: flex;
-        border-radius: 20px;
+        /* border-radius: 50px; */
         margin: auto;
         align-items: center;
         justify-content: center;
@@ -337,6 +337,10 @@
         margin-bottom: 100px;
         display: block;
     }
+    .testimonial .left{
+        /* align-self: center; */
+        margin-bottom: 50px;
+        }
 
     /* Team section */
 

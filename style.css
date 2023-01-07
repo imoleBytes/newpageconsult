@@ -199,10 +199,23 @@ header{
 .services h1{
     font-size: xx-large;
 }
+.services p{
+    font-size: 1.2rem;
+}
+.services .card{
+    /* height: 40vh; */
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 .cards{
     display: flex;
     margin-top: 40px;
-    gap: 100px;
+    gap: 20px;
 }
 /* .cards .card .icon h4{
     margin-bottom: 20px;
@@ -211,7 +224,7 @@ header{
     width: 80px;
     height:80px;
     display: flex;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -357,6 +370,7 @@ header{
 .testimonial{
     width: 70%;
     margin: auto;
+    padding-top: 20px;
     /* margin-top: 100px; */
     margin-bottom: 100px;
     display: flex;
@@ -371,6 +385,7 @@ align-self: center;
 .left p{
     font-size: large;
     font-weight: 400;
+    color:#e52f37
 }
 .testimony{
     background-color: white;
