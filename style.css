@@ -7,6 +7,10 @@
     /* font-family:'Courier New', Courier, monospace; */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1,h2,h3,h4,h5,p{
     margin: 0;
     padding: 0;
@@ -44,6 +48,8 @@ header{
     width: 100vw;
     /* position: fixed; */
     /* z-index: 100; */
+
+   
 }
 .header{
     /* background-color:burlywood; */
