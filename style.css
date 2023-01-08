@@ -35,11 +35,15 @@ body{
 
 /* header starts here */
 header{
-    background-color: rgb(230, 235, 235);
+    /* background-color: rgb(230, 235, 235); */
+    background: linear-gradient(to right, white, #04284d);
     /* font-size: large; */
     border-top-color: #e52f37;
     border-top-width: 1px;
     border-top-style: solid;
+    width: 100vw;
+    /* position: fixed; */
+    /* z-index: 100; */
 }
 .header{
     /* background-color:burlywood; */
@@ -50,6 +54,14 @@ header{
     width: 70%;
     margin: auto;
     /* justify-items: center; */
+}
+.bar{
+    visibility: hidden;
+}
+.m-menu{
+    position: absolute;
+    background-color: #e3f1f8;
+    display: none;
 }
 .logo{
     font-weight: bold;
@@ -73,6 +85,7 @@ header{
 }
 .nav-links li{
     margin-right: 20px;
+    
 }
 .nav-links a:hover{
     color:#e52f37;
@@ -80,6 +93,7 @@ header{
 }
 .nav-links a{
     text-decoration: none;
+    color: #e3f1f8;
 }
 
 .header button{
@@ -230,7 +244,10 @@ header{
     justify-content: center;
     margin-bottom: 15px;
 }
-
+.card i{
+    color: #e3f1f8;
+    
+}
 #card1 .icon{
     background-color: #1e90ff;
 }
@@ -534,7 +551,11 @@ form .contact-input{
     margin: auto;
     text-transform: uppercase;
     color:#e52f37;
+    /* color: #04284d; */
+    /* background-color: #04284d; */
     font-weight:800;
+    border-radius: 10px;
+    border-style: none;
 }
 
 /* footer */
@@ -545,4 +566,5 @@ footer{
     height:100px;
     align-items:center;
     font-size: larger;
+    background-color: white;
 }

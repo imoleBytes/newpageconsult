@@ -1,8 +1,12 @@
 @media screen and (max-width: 414px){
+
+    header{
+        background: whitesmoke;
+    }
     
     .header{
         /* background-color:burlywood; */
-        display: block;
+        display: flex;
         align-items: center;
         width: 80%;
         height:150px;
@@ -14,8 +18,27 @@
         /* justify-items: center; */
     }
 
+    .bar{
+        visibility:visible;
+    }
+    .m-menu{
+        position:absolute;
+        background-color: #e3f1f8;
+        display: block;
+        visibility: hidden;
+
+        z-index: 15;
+        width: 90vw;
+        height: 50vh;
+        padding: 20px;
+        top: 100px;
+        right: 0px;
+        font-size: xx-large;
+        text-align: end;
+    }
+
     .nav-links{
-        /* display: flex; */
+        display: none;
         /* width: 50%; */
         /* justify-content:center; */
         /* background-color: aqua; */
@@ -41,6 +64,7 @@
     }
     .nav-links a{
         text-decoration: none;
+        color: #04284d;
     }
 
     .header button{
@@ -380,6 +404,17 @@
 
     form .contact-input{
         width: 100%;        
+    }
+
+
+    /* footer */
+    footer{
+        display: block;
+        text-align: center;
+        height:100px;
+        padding-top: 20px;
+        align-items:center;
+        font-size: larger;
     }
 
 }
