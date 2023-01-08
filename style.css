@@ -49,11 +49,12 @@ header{
     /* position: fixed; */
     /* z-index: 100; */   
 }
+
 .header{
     /* background-color:burlywood; */
     display: flex;
     justify-content:space-between;
-    height: 90px;
+    height: 100px;
     align-items: center;
     width: 70%;
     margin: auto;
@@ -111,7 +112,6 @@ header{
 .header button:hover{
     cursor: pointer;
 }
-
 
 /* header ends here */
 
@@ -199,6 +199,16 @@ header{
     height: 100%;
     border-radius: 50px;
 }
+
+@media screen and (max-width: 768px){
+    .header{
+        width: 100%;
+        /* padding: 20px; */
+        /* height: 100vh; */
+        justify-content:space-around;
+    }
+}
+
 
 /* hero ends here */
 .services-wraper{
