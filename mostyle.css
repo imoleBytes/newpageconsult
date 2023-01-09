@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         width: 80%;
-        height:150px;
+        height:80px;
         margin: auto;
         margin-top: 10px;
         padding-bottom: 20px;
@@ -23,14 +23,15 @@
     }
     .m-menu{
         position:absolute;
-        background-color: #e3f1f8;
+        /* background-color: #e3f1f8; */
+        background-color: #b4a3a4;
         display: block;
-        
-
+            
         z-index: 15;
         width: 90vw;
-        height: 50vh;
+        height: 80vh;
         padding: 20px;
+        opacity: 0.9;
         top: 100px;
         right: 0px;
         font-size: xx-large;
@@ -136,6 +137,7 @@
         /* margin-bottom: auto; */
     }
     .hero-left h1{
+        transition: 2s ease-in;
         font-size: 35px;
         line-height: 1em;
         margin-top: 5px;

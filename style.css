@@ -72,6 +72,7 @@ header{
 .logo{
     font-weight: bold;
     font-size: larger;
+    text-shadow: 1px 3px white;
 }
 .logo span{
     color: #e52f37;
@@ -109,6 +110,7 @@ header{
     border-radius: 20px;
     color: white;
     font-weight: bold;
+    box-shadow: 2px 2px 2px grey;
 }
 .header button:hover{
     cursor: pointer;
@@ -162,6 +164,7 @@ header{
     color: #e3f1f8;
 }
 .hero-left h1{
+    transition: 2s ease-in;
     font-size: 40px;
     line-height: 1em;
     margin-top: 20px;
@@ -187,6 +190,7 @@ header{
     background-color: #e52f37;
     border-style: none;
     color: white;
+    box-shadow: 2px 2px 2px grey;
 
 }
 
@@ -233,6 +237,7 @@ header{
     padding-bottom: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 5px grey;
 }
 .cards{
     display: flex;
@@ -304,6 +309,7 @@ header{
 
 }
 .inner-step{
+    transition: 5s ease;
     margin-left: 20px;
 }
 
@@ -418,8 +424,9 @@ align-self: center;
     margin-bottom: 50px;
     padding: 20px;
     /* border-left: #27b36a 5px solid; */
-    border-left: #27b36a 2px solid;
-    border-bottom: #e52f37 2px solid;
+    /* border-left: #27b36a 2px solid; */
+    /* border-bottom: #e52f37 2px solid; */
+    box-shadow: 2px 2px 5px grey;
     /* 27b36a green */
 }
 .testimony p{
@@ -464,6 +471,7 @@ align-self: center;
     justify-content:center
 }
 .our-team .card{
+    transition:5s ease-in;
     background-color: white;
     width: 256px;
 }
