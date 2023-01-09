@@ -55,7 +55,7 @@ header{
     /* background-color:burlywood; */
     display: flex;
     justify-content:space-between;
-    height: 90px;
+    height: 100px;
     align-items: center;
     width: 70%;
     margin: auto;
@@ -129,6 +129,7 @@ header{
     background-attachment:fixed;
     position: relative;
     z-index: 10;
+    width: 100vw;
     
 }
 .hero-wraper::after{
@@ -158,6 +159,7 @@ header{
 }
 .hero-left h5{
     font-size: 15px;
+    color: #e3f1f8;
 }
 .hero-left h1{
     font-size: 40px;
