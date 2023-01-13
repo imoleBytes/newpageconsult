@@ -437,6 +437,7 @@ align-self: center;
     background-color: white;
     margin-bottom: 50px;
     padding: 20px;
+    border-radius: 10px;
     /* border-left: #27b36a 5px solid; */
     /* border-left: #27b36a 2px solid; */
     /* border-bottom: #e52f37 2px solid; */
@@ -489,11 +490,14 @@ align-self: center;
     transition:5s ease-in;
     background-color: white;
     width: 256px;
+    border: 2px black solid;
+    border-radius: 10px;
+
 }
 
 .our-team .img{
-    width: 256px;
-    height: 256px;
+    width: 100%;
+    height: auto;
     background-color: #04284d;
     margin-bottom: 20px;
 }
@@ -532,7 +536,9 @@ hr{
     height: 100vh;
     position: absolute;
     z-index: 100;
-    top: 0px;
+    /* top: 0px; */
+    margin-left: -50vw;
+    margin-top: -50vh;
     opacity: 0.9;
     transition: 5s ease-in;
 }
