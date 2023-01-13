@@ -511,8 +511,16 @@ hr{
 
 .contact-wraper{
     background-color: #e52f37;
+    /* background-color: black; */
+
     padding-bottom: 50px;
     padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    opacity: 0.9;
 }
 
 .contact-us{
@@ -549,7 +557,8 @@ form .contact-input{
     font-size: large;
     font-weight: 700;
     border: white 2px solid;
-    background-color:gainsboro;
+    /* background-color:gainsboro; */
+    background-color:rgb(255, 255, 255);
     /* color: white; */
     text-decoration-color: white;
 
@@ -564,11 +573,17 @@ form .contact-input{
     /* margin-left: 0; */
 }
 
+.modalbtn{
+    display: flex;
+    justify-content:space-around;
+}
+
 .contact-submit{
-    display: block;
-    width: 300px;
+    /* display: inline-block; */
+    width: 40%;
     height: 50px;
-    margin: auto;
+    /* margin: 5px; */
+    
     text-transform: uppercase;
     color:#e52f37;
     /* color: #04284d; */
@@ -577,41 +592,6 @@ form .contact-input{
     border-radius: 10px;
     border-style: none;
 }
-
-
-/* modal styles */
-
-#modal-section{
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 100;
-    top: 0px;
-    opacity: 0.9;
-    display: none;
-}
-.modal{
-    /* background-color: black; */
-    /* position: relative; */
-    width: 80%;
-    margin: auto;
-    margin-top: 100px;
-}
-.modal-inner{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-
-}
-.modal-input{
-    padding: 10px;
-    width: 80%;
-    margin: auto;
-}
-
-
 
 
 /* footer */

@@ -43,9 +43,9 @@
         </div>
     </header> 
 
-    <section id="modal-section">
+    <section class="contact-wraper" id="contact-wraper">
 
-        <div class="modal">
+        <div class="contact-us">
 
             <h1>Contact Us</h1>
             <h5>Have any queries? Get in touch today.</h5>
@@ -77,9 +77,11 @@
                 <div id="textarea">
 
                     <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
-
-                    <input value="Get In Touch" class="contact-submit" type="submit">
-                    <input value="Cancel" class="contact-submit" type="button">
+                    <div class="modalbtn">
+                        <input value="Get In Touch" class="contact-submit" type="submit">
+                        <input value="Cancel" class="contact-submit" type="button">
+                    </div>
+                    
                 
                 </div>    
             </form>
@@ -384,12 +386,13 @@
             </div>
         </section>
 
-        <section class="contact-wraper" id="contact-wraper">
+        <!-- <p class="contact_success_box" style="display:none;">We received your message and you will hear from us soon. Thank You!</p> -->
+
+        <!-- <section class="contact-wraper" id="contact-wraper">
             <div class="contact-us">
                 <h1>Contact Us</h1>
                 <h5>Have any queries? Get in touch today.</h5>
                 
-                <!-- <p class="contact_success_box" style="display:none;">We received your message and you will hear from us soon. Thank You!</p> -->
                 <form action="" method="post">              
                     <div class="inner">
                         <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
@@ -422,7 +425,7 @@
                     </div>    
                 </form>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
