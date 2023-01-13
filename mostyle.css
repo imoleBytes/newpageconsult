@@ -3,7 +3,10 @@
     header{
         background: whitesmoke;
     }
-    
+    .short{
+        height: 100vh;
+        overflow-y: hidden;
+    }
     .header{
         /* background-color:burlywood; */
         display: flex;
@@ -24,18 +27,26 @@
     .m-menu{
         position:absolute;
         /* background-color: #e3f1f8; */
-        background-color: #b4a3a4;
+        /* background-color: #b4a3a4; */
+        background-color: #fff;
         display: block;
             
         z-index: 15;
         width: 90vw;
         height: 80vh;
-        padding: 20px;
-        opacity: 0.9;
+        /* width: 100vw;
+        height: 100vh; */
+        /* padding: 20px; */
+        opacity: 0.95;
         top: 100px;
         right: 0px;
         font-size: xx-large;
-        text-align: end;
+        /* text-align:center; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-top: 0px;
+
     }
     .t{
         visibility: hidden;
@@ -48,19 +59,25 @@
         /* background-color: aqua; */
         margin-top: 10px;
     }
-    .nav-links ul{
+    .m-menu ul{
         list-style: none;
         /* background-color: bisque; */
+        padding: 50px;
         
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;
-        font-size: 24px;
+        /* display: flex; */
+        /* justify-content:center; */
+        /* flex-wrap: wrap; */
+        font-size: 32px;
+        /* font-weight: 900; */
         /* margin-right: 50px; */
     
     }
-    .nav-links li{
-        margin-right: 10px;
+    .m-menu li{
+        /* margin-right: 100px; */
+        text-align: justify;
+        margin-bottom: 50px;
+        /* margin: 50px; */
+
     }
     .nav-links a:hover{
         color:#e52f37;

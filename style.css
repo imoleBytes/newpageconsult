@@ -119,6 +119,7 @@ header{
 
 /* header ends here */
 
+
 /* Hero starts here */
 
 .hero-wraper{
@@ -385,6 +386,7 @@ header{
 }
 .img img{
     width:inherit;
+    height:inherit;
 }
 .card ul{
     display: flex;
@@ -468,6 +470,7 @@ align-self: center;
 .our-team .cards{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     justify-content:center
 }
 .our-team .card{
@@ -574,6 +577,42 @@ form .contact-input{
     border-radius: 10px;
     border-style: none;
 }
+
+
+/* modal styles */
+
+#modal-section{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    opacity: 0.9;
+    display: none;
+}
+.modal{
+    /* background-color: black; */
+    /* position: relative; */
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.modal-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+.modal-input{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+
+
 
 /* footer */
 
