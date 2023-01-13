@@ -43,7 +43,7 @@
         </div>
     </header> 
 
-    <section class="contact-wraper" id="contact-wraper">
+    <section class="contact-wraper hide" id="contact-wraper">
 
         <div class="contact-us">
 
@@ -79,7 +79,7 @@
                     <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
                     <div class="modalbtn">
                         <input value="Get In Touch" class="contact-submit" type="submit">
-                        <input value="Cancel" class="contact-submit" type="button">
+                        <input value="Cancel" class="contact-submit" type="button" onclick="closeModal()">
                     </div>
                     
                 
@@ -104,7 +104,7 @@
                         subjects and examinations that matter to you!
                         Our focus is linking learners with qualified tutors.
                     </P>
-                    <button>Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                    <button onclick="showModal()">Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
                 </div>
                 <div class="hero-right">
                     <img src="./images/img/hometeach-min.jpg" alt="" srcset="">

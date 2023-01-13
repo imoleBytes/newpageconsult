@@ -7,6 +7,18 @@
     /* font-family:'Courier New', Courier, monospace; */
 }
 
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.short{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -510,6 +522,7 @@ hr{
 /* contact us */
 
 .contact-wraper{
+    /* display: none; */
     background-color: #e52f37;
     /* background-color: black; */
 
@@ -521,6 +534,7 @@ hr{
     z-index: 100;
     top: 0px;
     opacity: 0.9;
+    transition: 5s ease-in;
 }
 
 .contact-us{

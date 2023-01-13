@@ -2,7 +2,20 @@ const bar = document.querySelector('.bar');
 const m_menu = document.querySelector('.m-menu');
 const mbars = document.querySelector('.mbars');
 const body = document.querySelector('body');
+const contact = document.querySelector('.contact-wraper');
 
+
+
+function showModal() {
+    contact.classList.remove('hide');
+    body.classList.add('short');
+}
+
+
+function closeModal() {
+    contact.classList.add('hide');
+    body.classList.remove('short');
+}
 
 
 bar.addEventListener('click',toggle);
