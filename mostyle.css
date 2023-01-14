@@ -405,13 +405,13 @@
     .our-team .card{
         background-color: white;
         width: 45%;
-        border: #04284d 1px solid;
+        /* border: #04284d 1px solid; */
     }
     
     .our-team .img{
         width: 100%;
         height: auto;
-        background-color: #04284d;
+        /* background-color: #04284d; */
         border-radius: 5px;
         margin-bottom: 20px;
     }
