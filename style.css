@@ -126,8 +126,8 @@ header{
 }
 .header button:hover{
     cursor: pointer;
+    font-weight: 500;
 }
-
 
 /* header ends here */
 
@@ -206,7 +206,12 @@ header{
     box-shadow: 2px 2px 2px grey;
 
 }
+.hero-left button:hover{
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #b8242c;
 
+}
 .hero-right{
     display: flex;
     /* background-color: #04284d; */
@@ -536,11 +541,11 @@ hr{
     height: 100vh;
     position: absolute;
     z-index: 100;
-    /* top: 0px; */
-    margin-left: -50vw;
-    margin-top: -50vh;
+    top: 0px;
+    margin-left: auto;
+    margin-top: auto;
     opacity: 0.9;
-    transition: 5s ease-in;
+    transition: 3s ease-in;
 }
 
 .contact-us{
@@ -611,6 +616,11 @@ form .contact-input{
     font-weight:800;
     border-radius: 10px;
     border-style: none;
+}
+.contact-submit:hover{
+    cursor: pointer;
+    /* font-weight: 500; */
+    background-color: #04284d;
 }
 
 
