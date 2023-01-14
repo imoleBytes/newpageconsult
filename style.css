@@ -494,8 +494,8 @@ align-self: center;
 .our-team .card{
     transition:5s ease-in;
     background-color: white;
-    width: 256px;
-    border: 2px black solid;
+    width: 300px;
+    /* border: 2px black solid; */
     border-radius: 10px;
 
 }
@@ -503,7 +503,7 @@ align-self: center;
 .our-team .img{
     width: 100%;
     height: auto;
-    background-color: #04284d;
+    /* background-color: #04284d; */
     margin-bottom: 20px;
 }
 
