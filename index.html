@@ -1,121 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Coming Soon 2</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tabstyle.css">
+    <link rel="stylesheet" href="./mostyle.css">
+    <link rel="shortcut icon" href="./fav2.jpg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Newpage Consult</title>
 </head>
-<body>
-	
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
-	</div>
+<body class="dr">
+<!-- header starts here -->
+    <section id="preHeader">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100083712878044"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/newpage_ec/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
 
-	<div class="size1 overlay1">
-		<!--  -->
-		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-25">
-				Coming Soon
-			</h3>
+        <div><i class="fa-solid fa-phone"></i> +234 803 478 6633</div>
+    </section>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">NEC|Newpage <span>Consult</span>.</a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a onclick="showModal()">Contact Us</a></li>
+                    <li><a href="#testimo">Testimonials</a></li>                    
+                    <!-- <li><a href="">Tutors</a></li> -->
+                </ul>
+                <button onclick="showModal()">Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+            </nav>
 
-			<p class="m2-txt1 txt-center p-b-48">
-				Our website is under construction, follow us for update now!
-			</p>
+            <div class="bar"><i class="fa-solid fa-bars fa-2x mbars"></i></div>
 
-			<div class="flex-w flex-c-m cd100 p-b-33">
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt1">Days</span>
-				</div>
+            <div class="m-menu t">
+                <ul>
+                    <li onclick="rmve()"><a href="index.html">Home</a></li>
+                    <li onclick="rmve()"><a href="#">About</a></li>
+                    <li onclick="rmve()"><a href="#services">Services</a></li>
+                    <li onclick="rmve()"><a href="#contact-wraper">Contact Us</a></li>
+                    <li onclick="rmve()"><a href="#testimo">Testimonials</a></li>      
+                </ul>
+            </div>
+        </div>
+    </header> 
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt1">Hours</span>
-				</div>
+    <section class="contact-wraper hide" id="contact-wraper">
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt1">Minutes</span>
-				</div>
+        <div class="contact-us">
 
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt1">Seconds</span>
-				</div>
-			</div>
-
-			<form class="w-full flex-w flex-c-m validate-form">
-
-				<div class="wrap-input100 validate-input where1" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100 placeholder0 s2-txt2" type="text" name="email" placeholder="Enter Email Address">
-					<span class="focus-input100"></span>
-				</div>
-				
-				
-				<button class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1">
-					Subscribe
-				</button>
-			</form>
-		</div>
-	</div>
+            <h1>Contact Us</h1>
+            <h5>Have any queries? Get in touch today.</h5>
 
 
+            <form action="" method="post">              
+                <div class="inner">
+                    <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
+                
+                    <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+    
+                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                
+                    <select class="contact-input" required="" name="contact_ticket">
 
-	
+                        <option value="">I am: </option>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+                        <option value="Student">Student</option>
 
+                        <option value="Tutor">Tutor</option>
+
+                        <option value="Parent/Guardian">Parent/Guardian</option>
+
+                        <option value="Other">Other</option>
+
+                    </select>                    
+                </div>
+    
+                <div id="textarea">
+
+                    <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
+                    <div class="modalbtn">
+                        <input value="Get In Touch" class="contact-submit" type="submit">
+                        <input value="Cancel" class="contact-submit" type="button" onclick="closeModal()">
+                    </div>
+                    
+                
+                </div>    
+            </form>
+        </div>
+        
+    </section>
+
+<!-- main body starts here -->
+    <main>
+
+        <section class="hero-wraper">
+            <section class="hero">
+                <div class="hero-left">
+                    <h5>PERFECT SOLUTION FOR YOUR EDUCATION</h5>
+                    <h1>
+                        Newpage Educational Consult '<span>We Impact Knowledge</span>'
+                    </h1>
+                    <P>
+                        Connect with Newpage Tutors offline and online to master 
+                        subjects and examinations that matter to you!
+                        Our focus is linking learners with qualified tutors.
+                    </P>
+                    <button onclick="showModal()">Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                </div>
+                <div class="hero-right">
+                    <img src="./imagess/img/hometeach-min.jpg" alt="" srcset="">
+                </div>
+            </section>
+        </section>        
+
+        <div class="services-wraper" id="services">
+            <section class="services">
+                <h1>What We Do</h1>
+                <h3>Discover how our amazing team can help you</h3>
+
+                <div class="cards">
+                    <div class="card" id="card1">
+                        <div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+                        <h4>Provide Tutors</h4>  
+                        <!-- <p>Book tutor to help deal with your need to excel in 
+                            your specified subjects online / offline or both.
+                        </p>               -->
+                        <p>Offers both online and physical home tutoring for a range of academic subjects.</p>
+                        <!-- <p>We provide Tutors for children in:</p> -->
+                        <ul>
+                            <li>Nursery</li>
+                            <li>Basic 1-5</li>
+                            <li>Year 7-12</li>
+                            <li>IGSCE</li>
+                            <li>WAEC</li>
+                            <li>NECO</li>
+                            <li>IELTS</li>
+                            <li>SAT</li>
+                            <li>JAMB</li>
+                            <li>ICAN</li>
+                        </ul>
+                    </div>
+        
+                    <div class="card" id="card2">
+                        <div class="icon"><i class="fa fa-info-circle fa-0.5x" aria-hidden="true"></i>
+                        </div>
+                        <h4>Educational Consultancy</h4>  
+                        <!-- <p>Let our coaches help make informed decision in your
+                            educational endeavors.</p> -->
+                        <p>We provide expertise and insight related to early childhood, 
+                            primary, secondary, and higher education, either for short-term projects or ongoing assignments.</p>           
+                    </div>
+        
+                    <div class="card" id="card3">
+                        <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <h4>Train Tutors</h4>  
+                        <!-- <p>We get skillful and top-rated individuals and train them with
+                            new tech and make them mmsdhdkdldkd jhddhhdhxh.
+                        </p>               -->
+                        <p>We provide initial training through professional development seminars to underserved school leaders and teachers.</p>
+                        <!-- <p>Gain the skills & knowledge you need to become a professional teacher from The Teachers Training.</p> -->
+                    </div>
+
+                </div>
+
+                
+            </section>
+        </div>
+        <div class="teachpic">
+            <div class="steps-right">
+                <img src="./imagess/img/teach.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <section id='steps-wraper'>
+            <div class="steps">
+                <div class="steps-left">
+                    <h3>Learning has Never been this easy</h3>
+                    <div class="step">
+                        <div class="icon"><i class="fa-solid fa-list" aria-hidden="true"></i>
+                        </div>
+                        <div class="inner-step">
+                            <!-- <h4>Step 1</h4> -->
+                            <p>Fill and book the form given the 
+                                intended subjects or the examinations.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="icon"><i class="fa-solid fa-list"></i>
+                        </div>
+                        <div class="inner-step">
+                            <!-- <h4>Step 2</h4> -->
+                            <p>Newpage will get back to you
+                                 with the appropriate tutor and your agreed bill.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="icon"><i class="fa-solid fa-list" aria-hidden="true"></i>
+                        </div>
+                        <div class="inner-step">
+                            <!-- <h4>Step 3</h4> -->
+                            <p>Accept and schedule your lessons
+                                 from the message with the tutor.</p>
+                        </div>
+                    </div>            
+                </div>
+                <div class="steps-right">
+                    <img src="./imagess/img/teach.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="subjects-wrapper">
+            <div class="subjects">
+                <h1>Our Subjects</h1>
+                <p>Discover the subjects and exams we cater for.</p>
+                <div class="subj-cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/math.jpg" alt="maths" srcset="">
+                        </div>
+                        <h3>Mathematics</h3>
+                        <ul>
+                            <li>Algebra</li>
+                            <li>Geometry</li>
+                            <li>Calculus</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/english.png" alt="english" srcset="">
+                        </div>
+                        <h3>English Language</h3>
+                        <ul>
+                            <li>Grammar</li>
+                            <li>Writing</li>
+                            <li>Literature</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/business.jpg" alt="business" srcset="">
+                        </div>
+                        <h3>Business & Commerce</h3>
+                        <ul>
+                            <li>Account</li>
+                            <li>Commerce</li>
+                            <li>Economics</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subj-cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/sciences.jpg" alt="Science" srcset="">
+                        </div>
+                        <h3>Science Subjects</h3>
+                        <ul>
+                            <li>Chemistry</li>
+                            <li>Physics</li>
+                            <li>Biology</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/exam.jpg" alt="exams" srcset="">
+                        </div>
+                        <h3>Exam Preparation</h3>
+                        <ul>
+                            <li>SAT</li>
+                            <li>WAEC & JAMB</li>
+                            <li>ICAN</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imagess/music.jpg" alt="music" srcset="">
+                        </div>
+                        <h3>Others</h3>
+                        <ul>
+                            <li>Music</li>
+                            <li>Lifestyle</li>
+                            <li>Cooking</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="testimonial-wraper" id="testimo">
+            <div class="testimonial">
+                <div class="left">
+                    <h1>What People Are Saying.</h1>
+                    <p>Here is a few of our testimonials...</p>
+                </div>
+                <div class="right">
+                    <div class="testimony">
+                        <p>Nemo enim ipsam voluptatem quia voluptas situm
+                             ets aspernatis netsum loris fugit, sed quia
+                              magni dolores eos quis ratione sequi etum 
+                              nets vesciunt neque</p>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Alex Smith / <span>Manager- Smartcodes</span></h4></div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimony">
+                        <p>Nemo enim ipsam voluptatem quia voluptas situm
+                             ets aspernatis netsum loris fugit, sed quia
+                              magni dolores eos quis ratione sequi etum 
+                              nets vesciunt neque</p>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Alex Smith / <span>Manager- Smartcodes</span></h4></div>
+                        </div>
+                    </div>
+
+                    <div class="testimony">
+                        <p>Nemo enim ipsam voluptatem quia voluptas situm
+                             ets aspernatis netsum loris fugit, sed quia
+                              magni dolores eos quis ratione sequi etum 
+                              nets vesciunt neque</p>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Alex Smith / <span>Manager- Smartcodes</span></h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-wraper">
+            <div class="our-team">
+                <h1>Meet Our Team</h1>
+                <p>Discover more about our high performing team.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img"><img src="./imagess/abbey-full555.jpg" alt="" srcset=""></div>
+                        <h3>Yusuf Abiodun</h3>
+                        <h5>Co-founder</h5>
+                        <hr>
+                        <p>Abiodun is our co-founder and has got M.Sc Environmental 
+                            Toxicology and Pollution Management.
+                            B.Sc Marine Biology.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/motun480.jpg" alt="" srcset=""></div>
+                        <h3>Abiodun Motunrayo</h3>
+                        <h5>Marketing Manager</h5>
+                        <hr>
+                        <p>Motunrayo has got B.Sc Business Administration and has developed
+                             search strategies for a variety of clients
+                              for over 5 years.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/peter797.jpg" alt="" srcset=""></div>
+                        <h3>Peter Abimbola</h3>
+                        <h5>Science Tutor</h5>
+                        <hr>
+                        <p>Peter has an M.Sc. Environmental Chemistry, B.Sc. Chemistry and P.G.D.E.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/nuru5655.jpg" alt="" srcset=""></div>
+                        <h3>Gbadegesin Nurudeen</h3>
+                        <h5>Director, Physical Sciences</h5>
+                        <hr>
+                        <p>Nurudeen has got M.Sc Applied Mathematics, 
+                            B.Sc Mathematics and NCE in Computer /Mathematics.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/gbenga.jpg" alt="" srcset=""></div>
+                        <h3>Demehin Gbenga</h3>
+                        <h5>Head of SEO</h5>
+                        <hr>
+                        <p>Gbenga has got a B.Sc Marine Biology and developed
+                             search strategies for a variety of clients
+                              for over 5 years.</p>                        
+                    </div>               
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- <p class="contact_success_box" style="display:none;">We received your message and you will hear from us soon. Thank You!</p> -->
+
+        <!-- <section class="contact-wraper" id="contact-wraper">
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+                <h5>Have any queries? Get in touch today.</h5>
+                
+                <form action="" method="post">              
+                    <div class="inner">
+                        <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
+                    
+                        <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+        
+                        <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                    
+                        <select class="contact-input" required="" name="contact_ticket">
+
+                            <option value="">I am: </option>
+
+                            <option value="Student">Student</option>
+
+                            <option value="Tutor">Tutor</option>
+
+                            <option value="Parent/Guardian">Parent/Guardian</option>
+
+                            <option value="Other">Other</option>
+
+                        </select>                    
+                    </div>
+        
+                    <div id="textarea">
+
+                        <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
+
+                        <input value="Get In Touch" class="contact-submit" type="submit">
+                    
+                    </div>    
+                </form>
+            </div>
+        </section> -->
+
+        <section class="statement-wraper">
+            <div class="statement">
+                <div class="mission">
+                    <h2>Mission:</h2>
+                    <code>
+                        To expand the frontiers of knowledge through
+                        provision of affordable, experienced, competent,
+                         verified, qualified and excellent tutors to various 
+                         learners.
+                    </code>
+                </div>
+                <div class="vision">
+                    <h2>Vision:</h2>
+                    <code>
+                        To be a world-class educational consult  for the
+                         pursuit of excellence in knowledge where learners
+                          can find and interact with tutors on one to one basis.
+                    </code>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="actionWh">
+        <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp fa-3x" aria-hidden="true" style="color: green; font-weight: 800;"></i></a>
+    </div>
+
+    <footer>
+        
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100083712878044"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/newpage_ec/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="#contact-wraper"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <div>© 2023 Newpage Edu. Consult.</div>
+    </footer>
+<script src="./index.js"></script>
 </body>
 </html>
