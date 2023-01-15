@@ -194,7 +194,7 @@ header{
     color: #e3f1f8;
 }
 .hero-left h1{
-    transition: 2s ease-in;
+    /* transition: 2s ease-in; */
     font-size: 40px;
     line-height: 1em;
     margin-top: 20px;
@@ -358,7 +358,7 @@ header{
 
 }
 .inner-step{
-    transition: 5s ease;
+    /* transition: 5s ease; */
     margin-left: 20px;
 }
 
