@@ -153,7 +153,7 @@ header{
 .hero-wraper{
     padding: 0;
     /* background-color: #27b36a; */
-    background:url("./images/img/books-min.jpg");
+    background:url("./imagess/img/books-min.jpg");
     /* background:url("./biglogo.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,7 +385,7 @@ header{
 /* Subject section */
 
 .subjects-wrapper{
-    background: url('./images/img/hometeach-min.jpg');
+    background: url('./imagess/img/hometeach-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
