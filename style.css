@@ -574,12 +574,12 @@ hr{
     padding-bottom: 50px;
     padding-top: 50px;
     width: 100vw;
-    height: 90vh;
-    position: absolute;
+    /* height: 80vh; */
+    position: fixed;
     z-index: 100;
     top: 0px;
     margin-left: auto;
-    margin-top: auto;
+    margin-top: 10px;
     opacity: 0.9;
     transition: 3s ease-in;
 }
@@ -629,7 +629,7 @@ form .contact-input{
 }
 #textarea textarea{
     width: 94%;
-    height: 300px;
+    height: 200px;
     /* background-color: #e52f37; */
     /* margin-left: 0; */
 }

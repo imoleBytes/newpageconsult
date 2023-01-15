@@ -439,6 +439,12 @@
     form .contact-input{
         width: 100%;        
     }
+    #textarea textarea{
+        width: 94%;
+        height: 20vh;
+        /* background-color: #e52f37; */
+        /* margin-left: 0; */
+    }
 
 
     /* footer */
