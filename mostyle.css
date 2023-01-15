@@ -28,7 +28,8 @@
     }
 
     .bar{
-        visibility:visible;
+        /* visibility:visible; */
+        display: block;
     }
     .m-menu{
         position:absolute;
@@ -445,6 +446,17 @@
         /* background-color: #e52f37; */
         /* margin-left: 0; */
     }
+
+    .statement{
+        width: 70%;
+        margin: auto;
+        display: block;
+        justify-content: center;
+    }
+    .mission{
+        margin-bottom: 50px;
+    }
+    
 
 
     /* footer */
