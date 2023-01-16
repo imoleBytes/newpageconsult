@@ -64,15 +64,15 @@
             <h5>Have any queries? Get in touch today.</h5>
 
 
-            <form action="" method="post">              
+            <form action="https://formsubmit.io/send/84226676-839e-47ef-9b6c-0a106b105400" method="post">              
                 <div class="inner">
-                    <input class="contact-input" name="contact_names" placeholder="Your Name*" type="text" required>
+                    <input class="contact-input" name="contact_name" placeholder="Your Name*" type="text" required>
                 
-                    <input class="contact-input" required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+                    <input class="contact-input"  required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
     
                     <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
                 
-                    <select class="contact-input" required="" name="contact_ticket">
+                    <select class="contact-input" required="" name="type">
 
                         <option value="">I am: </option>
 
@@ -91,12 +91,14 @@
 
                     <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
                     <div class="modalbtn">
-                        <input value="Get In Touch" class="contact-submit" type="submit">
+                        <input value="Get In Touch" id="submit" class="contact-submit" type="submit">
                         <input value="Cancel" class="contact-submit" type="button" onclick="closeModal()">
                     </div>
                     
                 
-                </div>    
+                </div>
+                <!-- <input type="hidden" name="_template" value="table"> -->
+
             </form>
         </div>
         
@@ -495,6 +497,8 @@
 
         <div>© 2023 Newpage Edu. Consult.</div>
     </footer>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./index.js"></script>
 </body>
 </html>

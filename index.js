@@ -3,7 +3,41 @@ const m_menu = document.querySelector('.m-menu');
 const mbars = document.querySelector('.mbars');
 const body = document.querySelector('body');
 const contact = document.querySelector('.contact-wraper');
+const submitBtn = document.querySelector('#submit');
 
+
+
+
+
+// submitBtn.addEventListener('click', function(e){
+//     e.preventDefault();
+//     let contact_name = document.getElementById('contact_names').value;
+//     let contact_phones = document.getElementById('contact_phone').value;
+//     let contact_email = document.getElementById('contact_email').value;
+//     let type = document.getElementById('type').value;
+//     let contact_message = document.getElementById('contact_message').value;
+    
+//     let body = `
+//         Name: ${contact_name};
+//         Phone: ${contact_phones};
+//         Email: ${contact_email};
+//         Type: ${type};
+//         Message: ${contact_message};
+
+//     `
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "username",
+//         Password : "password",
+//         To : 'them@website.com',
+//         From : "you@isp.com",
+//         Subject : "This is the subject",
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+//     // console.log(body);
+// })
 
 
 function showModal() {
