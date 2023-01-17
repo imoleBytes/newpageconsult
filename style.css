@@ -148,6 +148,50 @@ header{
 /* header ends here */
 
 
+.about-wraper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    text-align: left;
+    gap: 20px;
+}
+.about-wraper h2{
+    margin-bottom: 20px;
+    color: #e52f37;
+    border-bottom: 2px solid #e3f1f8;
+    padding-bottom: 10px;
+    /* font-family: monospace; */
+}
+
+.about-wraper .about{
+    width: 60%;
+}
+.about-wraper .values{
+    width: 35%;
+    background-color: #04284d;
+    padding: 20px;
+    box-shadow: 10px 5px 5px 1px rgb(124, 123, 123) ;
+    
+}
+.about code, .values code{
+    display: block;
+    margin: 10px;
+}
+.about code{
+    font-size: x-large;
+}
+code span{
+    text-transform: uppercase;
+    font-weight: 800;
+    color:#1e90ff;
+}
+.about-wraper p{
+    margin-bottom: 10px;
+}
+
+
+
+
 /* Hero starts here */
 
 .hero-wraper{

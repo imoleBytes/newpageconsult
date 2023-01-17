@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tabstyle.css">
+    <link rel="stylesheet" href="./mostyle.css">
+    <link rel="shortcut icon" href="./fav2.jpg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Newpage Consult</title>
+</head>
+<body class="dr">
+<!-- header starts here -->
+    <section id="preHeader">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100083712878044"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/newpage_ec/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <div><i class="fa-solid fa-phone"></i> +234 803 478 6633</div>
+    </section>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">|Newpage <span>Consult</span>.</a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a onclick="showModal()">Contact Us</a></li>
+                    <li><a href="/index.html#testimo">Testimonials</a></li>                    
+                    <!-- <li><a href="">Tutors</a></li> -->
+                </ul>
+                <button onclick="showModal()">Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+            </nav>
+
+            <div class="bar"><i class="fa-solid fa-bars fa-2x mbars"></i></div>
+
+            <div class="m-menu t">
+                <ul>
+                    <li onclick="rmve()"><a href="index.html">Home</a></li>
+                    <li onclick="rmve()"><a href="#">About</a></li>
+                    <li onclick="rmve()"><a href="/index.html#services">Services</a></li>
+                    <li onclick="rmve()"><a href="/index.html#contact-wraper">Contact Us</a></li>
+                    <li onclick="rmve()"><a href="/index.html#testimo">Testimonials</a></li>      
+                </ul>
+            </div>
+        </div>
+    </header> 
+
+    <section class="contact-wraper hide" id="contact-wraper">
+
+        <div class="contact-us">
+
+            <h1>Contact Us</h1>
+            <h5>Have any queries? Get in touch today.</h5>
+
+
+            <form action="https://formsubmit.io/send/84226676-839e-47ef-9b6c-0a106b105400" method="post">              
+                <div class="inner">
+                    <input class="contact-input" name="contact_name" placeholder="Your Name*" type="text" required>
+                
+                    <input class="contact-input"  required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+    
+                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                
+                    <select class="contact-input" required="" name="type">
+
+                        <option value="">I am: </option>
+
+                        <option value="Student">Student</option>
+
+                        <option value="Tutor">Tutor</option>
+
+                        <option value="Parent/Guardian">Parent/Guardian</option>
+
+                        <option value="Other">Other</option>
+
+                    </select>                    
+                </div>
+    
+                <div id="textarea">
+
+                    <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
+                    <div class="modalbtn">
+                        <input value="Get In Touch" id="submit" class="contact-submit" type="submit">
+                        <input value="Cancel" class="contact-submit" type="button" onclick="closeModal()">
+                    </div>
+                    
+                
+                </div>
+                <!-- <input type="hidden" name="_template" value="table"> -->
+
+            </form>
+        </div>
+        
+    </section>
+
+<!-- main body starts here -->
+    <main>
+
+        <!-- <section class="hero-wraper">
+            <section class="hero">
+                <div class="hero-left">
+                    <h5>PERFECT SOLUTION FOR YOUR EDUCATION</h5>
+                    <h1>
+                        Newpage Educational Consult '<span>Impact Knowledge</span>'
+                    </h1>
+                    <P>
+                        Connect with Newpage Tutors offline and online to master 
+                        subjects and examinations that matter to you!
+                        Our focus is linking learners with qualified tutors.
+                    </P>
+                    <button onclick="showModal()">Book Now <i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                </div>
+                <div class="hero-right">
+                    <img src="./imagess/img/compressClass.jpg" alt="" srcset="">
+                </div>
+            </section>
+        </section>         -->
+
+        
+        <!-- <div class="teachpic">
+            <div class="steps-right">
+                <img src="./imagess/img/teach.jpg" alt="" srcset="">
+            </div>
+        </div>  -->
+
+       <section class="subjects-wrapper">
+            <div class="subjects">
+                <div class="about-wraper">
+                    <div class="about">                
+                        <h2>About Us</h2>
+                        <code> 
+                            Newpage Educational Consult was founded in 2019, for 3 years, has provided qualified, 
+                            verified and competent tutors to various clients across Nigeria and abroad.
+                        </code>
+                            
+                        <code> Newpage Educational Consult
+                            has built a legacy of excellence, affordable home coaching, provide learning and 
+                            academic alternatives and offer a tailored learning program both physically and online Administration has
+                            been an instrumental in providing top range tutors.
+                        </code> 
+                        <code> 
+                            Our focus is linking learners with qualified 
+                            tutors.             
+                        </code>
+    
+                    </div>
+    
+                    <div class="values">
+                        <h2>Our Core Values</h2>
+                        <code><span>Teach </span>- We teach our students with kindness, empathy, respect and patience.</code>
+                        <code><span>Grow</span>- We grow the capacity of our students.</code>
+                        <code><span>Inspire </span> - We inspire to discover talents and pursue academic excellence.</code>
+                        <code><span>Nurture </span> - To nurture self respect in each child as well as respect for others.</code>
+                        <code><span>Build </span> - We build confidence in our students.</code>
+                    </div>
+                </div>               
+
+            </div>
+        </section>
+
+        <!-- <section class="testimonial-wraper" id="testimo">
+            <div class="testimonial">
+                <div class="left">
+                    <h1>What People Are Saying.</h1>
+                    <p>Here is a few of our testimonials...</p>
+                </div>
+                <div class="right">
+                    <div class="testimony">
+                        <code>I've been with the brand for over a year, and they have exceeded my expectations. 
+                            The blend of online and inperson works perfectly for my children. I look to 
+                            many more mutually beneficial years ahead.
+                        </code>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Mrs Adepeju Siyanbola / <span>Parent- Lagos.</span></h4></div>
+                        </div>
+                    </div>
+
+                    <div class="testimony">
+                        <code>Newpage Educational Consult is fabulous for my children. The teachers are very passionate about teaching
+                             and they make sure their students have a deep understanding of the math problem they solve.
+                              I also like that they are flexible and able to change 
+                              their schedule when needed by us. We hope to continue to learn with them.
+                        </code>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Tope / <span>Mother- Dalas, TX</span></h4></div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimony">
+                        <code>Excellent company. Rapid responses and intensive care.
+                             Also a friendly learning environment.</code>
+                        <div class="details">
+                            <div class="author-img"><img src="./imagess/testimonials1.jpg" alt="" srcset=""></div>
+                            <div class="name"><h4>Ayotola Damilola / <span>Student- University of North Texas</span></h4></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section> -->
+
+        <section class="team-wraper">
+            <div class="our-team">
+                <h1>Meet Our Team</h1>
+                <p>Discover more about our high performing team.</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img"><img src="./imagess/abbey-full555.jpg" alt="" srcset=""></div>
+                        <h3>Yusuf Abiodun</h3>
+                        <h5>Co-founder</h5>
+                        <hr>
+                        <p>Abiodun is our co-founder and has got M.Sc Environmental 
+                            Toxicology and Pollution Management.
+                            B.Sc Marine Biology.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/motun480.jpg" alt="" srcset=""></div>
+                        <h3>Abiodun Motunrayo</h3>
+                        <h5>Marketing Manager</h5>
+                        <hr>
+                        <p>Motunrayo has got B.Sc Business Administration and has developed
+                             search strategies for a variety of clients
+                              for over 5 years.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/peter797.jpg" alt="" srcset=""></div>
+                        <h3>Peter Abimbola</h3>
+                        <h5>Science Tutor</h5>
+                        <hr>
+                        <p>Peter has an M.Sc. Environmental Chemistry, B.Sc. Chemistry and P.G.D.E.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/nuru5655.jpg" alt="" srcset=""></div>
+                        <h3>Gbadegesin Nurudeen</h3>
+                        <h5>Mathematics Tutor</h5>
+                        <hr>
+                        <p>Nurudeen has got M.Sc Applied Mathematics, 
+                            B.Sc Mathematics and NCE in Computer /Mathematics.</p>                        
+                    </div>
+
+                    <div class="card">
+                        <div class="img"><img src="./imagess/gbenga.jpg" alt="" srcset=""></div>
+                        <h3>Demehin Gbenga</h3>
+                        <h5>Content Creator</h5>
+                        <hr>
+                        <p>Gbenga has got a First Class B.Sc Marine Biology and developed
+                             search strategies for a variety of clients
+                              for over 5 years.</p>                        
+                    </div>               
+                    
+                </div>
+            </div>
+        </section>
+
+       
+        <!-- <section class="statement-wraper">
+            <div class="statement">
+                <div class="mission">
+                    <h2>Mission:</h2>
+                    <code>
+                        To expand the frontiers of knowledge through
+                        provision of affordable, experienced, competent,
+                         verified, qualified and excellent tutors to various 
+                         learners.
+                    </code>
+                </div>
+                <div class="vision">
+                    <h2>Vision:</h2>
+                    <code>
+                        To be a world-class educational consult  for the
+                         pursuit of excellence in knowledge where learners
+                          can find and interact with tutors on one to one basis.
+                    </code>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <div id="actionWh">
+        <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp fa-3x" aria-hidden="true" style="color: green; font-weight: 800;"></i></a>
+    </div>
+
+    <footer>
+        
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100083712878044"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/newpage_ec/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/2348034786633?text=Hi,%20this%20is%20coming%20from%20the%20website,%20I'm%20interested%20in%20knowing%20details%20about%20"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="#contact-wraper"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <div>© 2023 Newpage Edu. Consult.</div>
+    </footer>
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<script src="./index.js"></script>
+</body>
+</html>
