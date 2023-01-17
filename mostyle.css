@@ -5,7 +5,6 @@
         width: 100%;
     }
 
-  
     header{
         background: whitesmoke;
     }
@@ -305,10 +304,11 @@
     .steps-left{
         display: block;
         width: 100%;
+        text-align: left;
     }
     .steps-left h3{
-        font-size: xx-large;
-        text-align: center;
+        /* font-size: xx-large; */
+        /* text-align: center; */
         margin-bottom: 20px;
     }
     .step{

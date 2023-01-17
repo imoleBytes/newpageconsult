@@ -53,8 +53,10 @@ body{
 
 #preHeader{
     /* height: 50px; */
+
     background-color: #b8242c;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: #f1faff;
     padding-left: 10px;
@@ -384,7 +386,9 @@ code span{
 
 .steps-left{
     width: 50%;
+    /* text-align: center; */
 }
+
 .step{
     display: flex;
     margin: 10px;
