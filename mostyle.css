@@ -106,7 +106,26 @@
     .header button:hover{
         cursor: pointer;
     }
-    
+
+    .about-wraper{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        display: block;
+        text-align: left;
+        gap: 20px;
+    }
+    .about-wraper .about{
+        width: 90%;
+        margin: auto;
+    }
+    .about-wraper .values{
+        width: 90%;
+        background-color: #04284d;
+        padding: 20px;
+        margin: auto;
+        box-shadow: 5px 5px 1px 1px rgb(124, 123, 123) ;
+        
+    }
     /* hero */   
 
     .hero-wraper{
