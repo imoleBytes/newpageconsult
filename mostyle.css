@@ -369,14 +369,16 @@
     }
     .img img{
         width:inherit;
-    }
+    }*/
     .card ul{
         display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 5px;
+        /* justify-content: space-between; */
+        /* padding-bottom: 20px; */
         color: rgb(240, 222, 222);
         font-style: italic;
-    } */
+    } 
 
     /* testimonial */
 
@@ -395,6 +397,12 @@
         /* align-self: center; */
         margin-bottom: 50px;
         }
+
+    .testimonial .right{
+        /* align-self: center; */
+        width: 100%;
+        }
+    
 
     /* Team section */
 

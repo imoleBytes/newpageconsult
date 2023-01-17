@@ -440,7 +440,9 @@ header{
 }
 .card ul{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-between; */
     /* padding-bottom: 20px; */
     color: rgb(240, 222, 222);
     font-style: italic;
@@ -462,6 +464,14 @@ header{
 .testimonial .left{
 align-self: center;
 }
+.testimonial .right{
+    align-self: center;
+    width: 60%;
+    margin-left: 20px;
+    border-left: #b8242c 2px outset;
+    padding: 10px;
+    /* border-style:outset; */
+    }
 .testimonial .left h1{
     font-size: xx-large;
     margin-bottom: 20px;

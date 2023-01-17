@@ -97,6 +97,10 @@
         color: white;
     }
 
+    .testimonial{
+        width: 90%;        
+    }
+
     .our-team{
         width: 90%;
         margin: auto;
