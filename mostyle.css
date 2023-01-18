@@ -382,6 +382,10 @@
         /* margin-bottom: 50px; */
         /* margin: auto; */
     }
+    .subj-cards .card{
+        width: 80%;
+        margin-bottom: 20px;
+    }
     /* .card .img{
         width: 254px;
         height: 148px;
