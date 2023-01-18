@@ -62,6 +62,10 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
+#preHeader a{
+    display: inline-block;
+    margin-right: 5px;
+}
 #preHeader i{
     color: white;
 }
@@ -573,20 +577,25 @@ align-self: center;
 /* Team Section */
 
 .team-wraper{
+    background-color: rgb(240, 233, 233);
     padding-top: 50px;
 }
 
 .our-team{
     width: 70%;
     margin: auto;
-    text-align: center;
-    margin-bottom: 50px;
+    /* text-align: center; */
+    padding-bottom: 50px;
+    /* margin-bottom: 50px; */
+    
 }
 .our-team .cards{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content:center
+    justify-content:center;
+    /* margin-bottom: 20px; */
+
 }
 .our-team .card{
     transition:5s ease-in;
@@ -594,6 +603,7 @@ align-self: center;
     width: 300px;
     /* border: 2px black solid; */
     border-radius: 10px;
+    padding: 10px;
 
 }
 
@@ -779,6 +789,11 @@ footer{
     /* background-color: rgb(118, 43, 189); */
     background-color: #b8242c;
     color: #e3f1f8;
+}
+
+footer a{
+    display: inline-block;
+    margin-right: 5px;
 }
 
 footer i{
