@@ -32,25 +32,19 @@
     }
     .m-menu{
         position:absolute;
-        /* background-color: #e3f1f8; */
-        /* background-color: #b4a3a4; */
+
         background-color: #fff;
         display: block;
             
         z-index: 15;
         width: 90vw;
         height: 80vh;
-        /* width: 100vw;
-        height: 100vh; */
-        /* padding: 20px; */
+     
         opacity: 0.95;
         top: 100px;
         right: 0px;
         font-size: xx-large;
-        /* text-align:center; */
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
+
         margin-top: 0px;
 
     }
@@ -60,9 +54,7 @@
 
     .nav-links{
         display: none;
-        /* width: 50%; */
-        /* justify-content:center; */
-        /* background-color: aqua; */
+    
         margin-top: 10px;
     }
     .m-menu ul{
@@ -70,12 +62,9 @@
         /* background-color: bisque; */
         padding: 50px;
         
-        /* display: flex; */
-        /* justify-content:center; */
-        /* flex-wrap: wrap; */
+    
         font-size: 32px;
-        /* font-weight: 900; */
-        /* margin-right: 50px; */
+
     
     }
     .m-menu li{
@@ -129,8 +118,7 @@
 
     .hero-wraper{
         padding: 0;
-        /* background-color: #27b36a; */
-        /* background:url("./images/img/books.jpg"); */
+        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -151,18 +139,14 @@
     .hero{
         /* background-color:burlywood; */
         display: block;
-        /* flex-direction: column; */
-        /* justify-content:space-between; */
+    
         height: auto;
-        /* padding-top: 20px; */
-        /* align-items:flex-start;
-        justify-content:flex-end; */
+     
         width: 100vw;
         /* height: 80vh; */
         margin: 0;
         padding: 150px 0px 100px 0px;
-        /* margin-top: 1px; */
-        /* justify-items: center; */
+
     }
     .hero-left{
         display: block;
@@ -175,8 +159,7 @@
     .hero-left h5{
         font-size: 15px;
         color: whitesmoke;
-        /* margin-top: 100px; */
-        /* margin-bottom: auto; */
+       
     }
     .hero-left h1{
         transition: 2s ease-in;
@@ -386,19 +369,12 @@
         width: 80%;
         margin-bottom: 20px;
     }
-    /* .card .img{
-        width: 254px;
-        height: 148px;
-    }
-    .img img{
-        width:inherit;
-    }*/
+ 
     .card ul{
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
-        /* justify-content: space-between; */
-        /* padding-bottom: 20px; */
+    
         color: rgb(240, 222, 222);
         font-style: italic;
     } 

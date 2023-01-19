@@ -1,29 +1,19 @@
 @media screen and (min-width: 481px) and (max-width: 768px){
     
     .header{
-        /* background-color:burlywood; */
-        /* display: flex; */
-        /* justify-content:space-between; */
-        /* height: 100px; */
-        /* align-items: center; */
+       
         width: 95%;
-        /* margin: auto; */
-        /* justify-items: center; */
+
     }
 
     .hero{
-        /* background-color:burlywood; */
-        /* display: flex; */
-        /* justify-content:space-between; */
-        /* height: 90px; */
-        /* align-items: center; */
+  
         width: 90%;
         height: auto;
         /* margin: auto; */
         padding-top: 50px;
         padding-bottom: 50px;
-        /* margin-top: 1px; */
-        /* justify-items: center; */
+ 
     }
 
 
@@ -78,9 +68,7 @@
         width: 80%;
         margin: auto;
         display: flex;
-        /* justify-content:space-between; */
-        /* justify-items:center; */
-        /* height: 90px; */
+    
         align-items: center;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -148,7 +136,5 @@
         color: white;
         font-size: large;
     }
-
-
 
 }

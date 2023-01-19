@@ -47,14 +47,11 @@ const person = document.getElementById('individual');
 
 function toggleCV() {
     if (person.value==="Tutor"){
-        cv.style.display = "block";
-        // cv.classList.add('show');
-        // cv.classList.remove('hide');    
+        cv.style.display = "block";        
 
     }else{
         cv.style.display = "none";
-        // cv.classList.remove('show');
-        // cv.classList.add('hide');
+    
     }
 }
 
