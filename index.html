@@ -70,11 +70,11 @@
                 <div class="inner">
                     <input class="contact-input" name="contact_name" placeholder="Your Name*" type="text" required>
                 
-                    <input class="contact-input"  required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+                    <input class="contact-input"  required name="contact_phone" placeholder="Phone Number*" type="tel">                    
     
-                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                    <input class="contact-input" required name="contact_email" placeholder="Email Adress*" type="email">
                 
-                    <select class="contact-input" required="" name="type">
+                    <select class="contact-input" id="individual" required="" name="type" required>
 
                         <option value="">I am: </option>
 
@@ -92,13 +92,16 @@
                 <div id="textarea">
 
                     <textarea class="contact-input"  name="contact_message" placeholder="Your Message..."></textarea>
+                    
+                    
+                    <input class="contact-input" id="cv" name="cv" type="file">
                     <div class="modalbtn">
                         <input value="Get In Touch" id="submit" class="contact-submit" type="submit">
                         <input value="Cancel" class="contact-submit" type="button" onclick="closeModal()">
-                    </div>
-                    
+                    </div>                    
                 
                 </div>
+               
                 <!-- <input type="hidden" name="_template" value="table"> -->
 
             </form>

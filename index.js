@@ -4,6 +4,10 @@ const mbars = document.querySelector('.mbars');
 const body = document.querySelector('body');
 const contact = document.querySelector('.contact-wraper');
 const submitBtn = document.querySelector('#submit');
+const cv = document.getElementById('cv');
+const person = document.getElementById('individual');
+// const cb = document.getElementById('cb');
+
 
 
 
@@ -40,13 +44,31 @@ const submitBtn = document.querySelector('#submit');
 // })
 
 
+
+function toggleCV() {
+    if (person.value==="Tutor"){
+        cv.style.display = "block";
+        // cv.classList.add('show');
+        // cv.classList.remove('hide');    
+
+    }else{
+        cv.style.display = "none";
+        // cv.classList.remove('show');
+        // cv.classList.add('hide');
+    }
+}
+
+person.addEventListener('change', toggleCV);
+
+
+
 function showModal() {
     contact.classList.remove('hide');
     body.classList.add('short');
 }
 
 
-function closeModal() {
+function closeModal() {    
     contact.classList.add('hide');
     body.classList.remove('short');
 }

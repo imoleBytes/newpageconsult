@@ -7,6 +7,13 @@
     /* font-family:'Courier New', Courier, monospace; */
 }
 
+#cv{
+    display: none;
+    width: 93%;
+    /* margin: auto; */
+    margin-bottom: 5px;
+}
+
 .show{
     display: block;
 }
@@ -721,6 +728,8 @@ form .contact-input{
     /* background-color: #e52f37; */
     /* margin-left: 0; */
 }
+
+
 
 .modalbtn{
     display: flex;
