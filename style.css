@@ -313,6 +313,7 @@ code span{
     margin: auto;
     text-align: center;
     padding-bottom: 50px;
+    padding: 5px;
 }
 .services h1{
     font-size: xx-large;
@@ -327,7 +328,8 @@ code span{
     flex-wrap: wrap;
 }
 .services #card1 ul li{
-    color: #b8242c;
+    /* color: #b8242c; */
+    color: #04284d;
     text-align: left;
     margin-right: 10px;
     font-weight: 500;
@@ -335,7 +337,7 @@ code span{
 }
 .services .card{
     /* height: 40vh; */
-    width: 30%;
+    width: 31%;
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
