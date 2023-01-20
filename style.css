@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style: none;
     /* font-family:'Courier New', Courier, monospace; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 #cv{
@@ -30,20 +33,25 @@ html{
     scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,p{
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'Nunito', sans-serif;
-    line-height: 1.2;
-   
+h1,
+h2,
+h3,
+h4,
+h5{   
+    line-height: 1.2;   
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.2;   
 }
 
 body{
     /* background-color: rgb(233, 238, 241); */
 
     /* LaunchStyles starts */
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -240,17 +248,22 @@ code span{
     /* justify-items: center; */
 }
 .hero-left{
+    
     width: 50%;
+    
+    padding-right: 10px;
 }
-.hero-left h5{
-    font-size: 15px;
+.hero-left h4{
+    text-align: left;
+    /* font-size: 1rem; */
     color: #e3f1f8;
 }
 .hero-left h1{
+    text-align: left;
     /* transition: 2s ease-in; */
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1em;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
     color: #e52f37;
 }
@@ -260,7 +273,7 @@ code span{
 }
 
 .hero-left p{
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 50px;
     color: white;
 }
@@ -293,7 +306,8 @@ code span{
 .hero-right img{
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px grey;
 }
 
 /* hero ends here */
@@ -383,9 +397,7 @@ code span{
     width: 70%;
     margin: auto;
     display: flex;
-    /* justify-content:space-between; */
-    /* justify-items:center; */
-    /* height: 90px; */
+    gap: 10px;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -397,27 +409,47 @@ code span{
     width: 50%;
     /* text-align: center; */
 }
+.steps-left h1,h3{
+    text-align: left;
+   
+}
+.steps-left h3{
+    margin-bottom: 20px;
+}
 
 .step{
     display: flex;
-    margin: 10px;
+    gap: 10px;
+    /* margin: 10px; */
+    margin-top: 10px;
+
 }
+
 .step .icon{
     width: 50px;
     height: 50px;
-    /* background-color: gray; */
-    margin: 10px;
-    border-radius: 50%;
+     
 }
 .step .icon i{
+    width: inherit;
     color: #e52f37;
-    font-size: xx-large;
-
+    font-size: xx-large;    
 }
+
+.step .inner-step{
+    
+    width: 100%;
+    height: auto;
+    /* background-color: #e3f1f8; */
+    margin: 0px;
+}
+
 .inner-step{
     /* transition: 5s ease; */
     margin-left: 20px;
 }
+
+
 
 .steps-right{
     display: flex;
@@ -477,8 +509,9 @@ code span{
     font-size: xx-large;
     /* color: #f3f0f0; */
 }
-.subjects p{
-    font-size: large;
+.subjects h3{
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 .subj-cards{
     display: flex;
@@ -497,7 +530,7 @@ code span{
 
 .card .img{
     width: 100%;
-    /* height: 168px; */
+    height: 200px;
 }
 .img img{
     width:inherit;
@@ -541,13 +574,13 @@ align-self: center;
     /* border-style:outset; */
     }
 .testimonial .left h1{
-    font-size: xx-large;
+    /* font-size: xx-large; */
     margin-bottom: 20px;
 }
-.left p{
-    font-size: large;
-    font-weight: 400;
-    color:#e52f37
+.left h3{
+    /* font-size: large; */
+    /* font-weight: 400; */
+    color:#e52f37;
 }
 .testimony{
     background-color: white;
@@ -560,10 +593,11 @@ align-self: center;
     box-shadow: 2px 2px 5px grey;
     /* 27b36a green */
 }
-.testimony p{
-    font-size: 20px;
-    font-style: oblique;
+.testimony p{    
+    font-style:italic;
+    /* font-weight: 300; */
     margin-bottom: 10px;
+    /* color: red; */
 }
 .details{
     display: flex;
@@ -573,7 +607,7 @@ align-self: center;
     width: 50px;
     height: 50px;
     background-color: #04284d;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 100px;
     border-style: none;
 }
@@ -634,17 +668,15 @@ align-self: center;
     width: inherit;
 }
 
-.our-team h1{
-    font-size: xx-large;
-}
-.our-team p{
-    font-size: 20px;
+
+.our-team h3{
+    /* font-size: 20px; */
     padding: 10px;
     /* font-style: oblique; */
 }
-.our-team code{
-    display: block;
-    margin: 10px;
+.our-team p{
+    /* font-size: 1.2rem; */
+    margin: 20px 0;
 }
 
 

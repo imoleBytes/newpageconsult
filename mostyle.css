@@ -156,14 +156,14 @@
         padding-right: 40px;
         padding-bottom: 40px;
     }
-    .hero-left h5{
-        font-size: 15px;
+    .hero-left h4{
+        /* font-size: 15px; */
         color: whitesmoke;
        
     }
     .hero-left h1{
         transition: 2s ease-in;
-        font-size: 35px;
+        /* font-size: 35px; */
         line-height: 1em;
         margin-top: 5px;
         margin-bottom: 20px;
@@ -175,7 +175,7 @@
     }
     
     .hero-left p{
-        font-size: 18px;
+        /* font-size: 18px; */
         margin-bottom: 20px;
         color: whitesmoke;
     }
@@ -353,8 +353,8 @@
         font-size: xx-large;
         /* color: #f3f0f0; */
     }
-    .subjects p{
-        font-size: larger;
+    .subjects h3{
+        padding: 0 10px;
     }
     .subj-cards{
         display: flex;
@@ -401,6 +401,7 @@
         /* align-self: center; */
         width: 100%;
         }
+  
     
 
     /* Team section */
