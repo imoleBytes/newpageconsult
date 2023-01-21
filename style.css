@@ -75,6 +75,9 @@ body{
     padding-right: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
+#preHeader p{
+    font-size: small;
+}
 #preHeader a{
     display: inline-block;
     margin-right: 5px;
