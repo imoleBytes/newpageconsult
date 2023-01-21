@@ -85,6 +85,11 @@ body{
 #preHeader i{
     color: white;
 }
+
+p i{
+    /* display: inline-block; */
+    margin-right: 5px;
+}
 /* header starts here */
 header{
     /* background-color: rgb(230, 235, 235); */
