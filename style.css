@@ -198,7 +198,7 @@ header{
 .about code{
     font-size: x-large;
 }
-code span{
+p span{
     text-transform: uppercase;
     font-weight: 800;
     color:#1e90ff;
