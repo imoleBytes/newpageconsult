@@ -66,21 +66,22 @@ body{
 #preHeader{
     /* height: 50px; */
 
-    background-color: #b8242c;
+    /* background-color: #b8242c; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #f1faff;
+    /* color: #f1faff; */
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 #preHeader a{
     display: inline-block;
     margin-right: 5px;
 }
-#preHeader i{
+/* #preHeader i{
     color: white;
-}
+} */
 /* header starts here */
 header{
     /* background-color: rgb(230, 235, 235); */
