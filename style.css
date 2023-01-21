@@ -191,13 +191,11 @@ header{
     box-shadow: 10px 5px 5px 1px rgb(124, 123, 123) ;
     
 }
-.about code, .values code{
-    display: block;
+.about p, .values p{
+   
     margin: 10px;
 }
-.about code{
-    font-size: x-large;
-}
+
 p span{
     text-transform: uppercase;
     font-weight: 800;
