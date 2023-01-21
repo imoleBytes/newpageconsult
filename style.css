@@ -595,7 +595,7 @@ align-self: center;
     /* 27b36a green */
 }
 .testimony p{    
-    font-style:italic;
+    /* font-style:italic; */
     /* font-weight: 300; */
     margin-bottom: 10px;
     /* color: red; */
