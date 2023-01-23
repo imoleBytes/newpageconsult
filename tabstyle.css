@@ -10,7 +10,6 @@
   
         width: 90%;
         height: auto;
-        /* margin: auto; */
         padding-top: 50px;
         padding-bottom: 50px;
  
@@ -29,7 +28,6 @@
         color: #e52f37;
     }
     .hero-left span{
-        /* color: #e52f37; */
         color: #f7f2f2;
     }
     
@@ -42,7 +40,6 @@
 
     .hero-right{
         display:block;
-        /* background-color: #04284d; */
         width: 50%;
         height: 100%;
         align-items: center;
@@ -56,7 +53,6 @@
 
 
     .services{
-        /* background-color: bisque; */
         width: 100%;
         margin: auto;
         text-align: center;
@@ -64,7 +60,6 @@
     }
 
     .steps{
-        /* background-color: #e52f37; */
         width: 80%;
         margin: auto;
         display: flex;
@@ -72,15 +67,12 @@
         align-items: center;
         margin-top: 50px;
         margin-bottom: 50px;
-        /* padding: 10px; */
     }
 
     .subjects{
-        /* background-color: grey; */
         width: 80%;
         margin: auto;
         margin-bottom: 100px;
-        /* justify-items: center; */
         text-align: center;
         color: white;
     }
@@ -92,7 +84,6 @@
     .our-team{
         width: 90%;
         margin: auto;
-        /* text-align: center; */
         margin-bottom: 50px;
     }
     .our-team .cards{
@@ -109,7 +100,6 @@
     .our-team .img{
         width: 100%;
         height: auto;
-        /* background-color: #04284d; */
         margin-bottom: 20px;
     }
     
@@ -118,16 +108,14 @@
     }
 
     .contact-us{
-        width: 80%;
-        /* background-color: wheat; */
+        width: 80%;    
         margin: auto;
-        /* height: 70vh; */
+     
     }
     .contact-us h1{
         text-align: center;
         font-size: xx-large;
-        color: white;
-        /* margin-top: 100px; */
+        color: white;   
     }
     .contact-us h5{
         text-align: center;
