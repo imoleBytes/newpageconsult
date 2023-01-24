@@ -513,11 +513,9 @@ p span{
     width: 70%;
     margin: auto;
     padding-top: 50px;
-    display: flex;
 }
-.testimonial .left{
-align-self: center;
-}
+
+
 .testimonial .right{
     align-self: center;
     width: 60%;
@@ -525,13 +523,24 @@ align-self: center;
     border-left: #b8242c 2px outset;
     padding: 10px;
     }
-.testimonial .left h1{
+.testimonial h1{
     margin-bottom: 20px;
 }
-.left h3{
+.testimonial h3{
     color:#e52f37;
+    /* margin-bottom: 10px; */
+    margin: 20px;
 }
+
+.testimonies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .testimony{
+    width: 40%;
     background-color: white;
     margin-bottom: 50px;
     padding: 20px;

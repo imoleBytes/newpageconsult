@@ -342,22 +342,21 @@
 
     .testimonial{
         width: 100%;
-        margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 50px 20px ;
+        /* padding-right: 20px;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 50px; */
         margin-bottom: 100px;
-        display: block;
     }
-    .testimonial .left{
-        margin-bottom: 50px;
-        }
+   
+  .testimonies{
+    display: block;
+  }
+  .testimony{
+    width: 90%;
+    margin: 12px auto;
 
-    .testimonial .right{
-        width: 100%;
-        }
-  
+  } 
     
 
     /* Team section */
