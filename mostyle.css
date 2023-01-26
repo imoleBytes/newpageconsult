@@ -421,9 +421,10 @@
     footer{
         display: block;
         text-align: center;
-        /* height:150px; */
+        height:auto;
         padding-top: 20px;
         padding-bottom: 20px;
+        
         align-items:center;
         font-size: larger;
     }
