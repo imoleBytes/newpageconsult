@@ -73,11 +73,11 @@
 
             <form action="https://formsubmit.io/send/48f4bfe5-d208-485b-93ec-d4a9f517ac7b" method="post">              
                 <div class="inner">
-                    <input class="contact-input" name="contact_name" placeholder="Your Name*" type="text" required>
+                    <input class="contact-input" name="contact_name" placeholder="Your Name*" type="text" required maxlength="35">
                 
-                    <input class="contact-input"  required="" name="contact_phone" placeholder="Phone Number*" type="tel">                    
+                    <input class="contact-input"  required="" name="contact_phone" placeholder="Phone Number* (e.g 2348034786633)" type="tel" pattern="+?[0-9]*" maxlength="15" minlength="5">                    
     
-                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                    <input class="contact-input" required="" name="contact_email" placeholder="Email Adress*" type="email" maxlength="30">
                 
                     <select class="contact-input" id="individual" required="" name="type" required>
 

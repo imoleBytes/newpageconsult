@@ -631,7 +631,9 @@ hr{
 /* contact us */
 
 .contact-wraper{
-    background-color: #e52f37;
+    /* background-color: #e52f37; */
+    background-color:#04284d;
+
 
     padding-bottom: 50px;
     padding-top: 50px;
@@ -679,6 +681,10 @@ form .contact-input{
     background-color:rgb(255, 255, 255);
     text-decoration-color: white;
     margin: 10px;
+}
+
+.contact-input:invalid{
+    border: 2px solid red;
 }
 #textarea textarea{
     width: 94%;
