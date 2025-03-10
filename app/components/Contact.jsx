@@ -63,27 +63,27 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="p-8">
-                        <form>
+                        <form action="https://formsubmit.io/send/48f4bfe5-d208-485b-93ec-d4a9f517ac7b" method="post">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                                 <div>
-                                    <label for="first_name" className="block text-gray-700 font-medium mb-2">First Name</label>
+                                    <label htmlFor="first_name" className="block text-gray-700 font-medium mb-2">First Name</label>
                                     <input type="text" id="first_name" name="first_name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"/>
                                 </div>
                                 <div>
-                                    <label for="last_name" className="block text-gray-700 font-medium mb-2">Last Name</label>
+                                    <label htmlFor="last_name" className="block text-gray-700 font-medium mb-2">Last Name</label>
                                     <input type="text" id="last_name" name="last_name" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"/>
                                 </div>
                             </div>
                             <div className="mb-6">
-                                <label for="email" className="block text-gray-700 font-medium mb-2">Email</label>
+                                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
                                 <input type="email" id="email" name="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"/>
                             </div>
                             <div className="mb-6">
-                                <label for="phone" className="block text-gray-700 font-medium mb-2">Phone</label>
+                                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone</label>
                                 <input type="tel" id="phone" name="phone" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"/>
                             </div>
                             <div className="mb-6">
-                                <label for="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
+                                <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
                                 <select id="subject" name="subject" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
                                     <option value="">Select a subject</option>
                                     <option value="math">Mathematics</option>
@@ -96,7 +96,7 @@ const Contact = () => {
                                 </select>
                             </div>
                             <div className="mb-6">
-                                <label for="message" className="block text-gray-700 font-medium mb-2">Message</label>
+                                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
                                 <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
                             </div>
                             <button type="submit" className="w-full bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition">

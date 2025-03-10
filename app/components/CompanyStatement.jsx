@@ -10,7 +10,7 @@ const CompanyStatement = () => {
                 <div className="bg-primary/5 p-8 rounded-lg border-l-4 border-primary">
                     <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
                     <p className="text-gray-700 leading-relaxed">
-                        At NewpageConsult Tutoring, our mission is to empower students of all ages and backgrounds to achieve academic excellence through personalized, high-quality tutoring services. We believe that every student has the potential to succeed with the right guidance and support.
+                        At Newpage Edu Consult, our mission is to empower students of all ages and backgrounds to achieve academic excellence through personalized, high-quality tutoring services. We believe that every student has the potential to succeed with the right guidance and support.
                     </p>
                     <p className="text-gray-700 leading-relaxed mt-4">
                         We are committed to fostering a love of learning, building confidence, and developing the skills necessary for long-term academic success and lifelong learning.
