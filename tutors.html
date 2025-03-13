@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Tutors | Newpage Edu Consult</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="src/output.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <!-- <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -22,8 +27,8 @@
                 }
             }
         }
-    </script>
-    <style>
+    </script> -->
+    <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
         html {
@@ -60,7 +65,8 @@
         .star-rating {
             color: #F59E0B;
         }
-    </style>
+    </style> -->
+
 </head>
 <body class="font-sans text-gray-800">
     <!-- Header/Navigation -->
@@ -69,7 +75,7 @@
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <span class="text-primary font-bold text-2xl">Newpage Edu Consult</span>
+                        <span class="text-primary font-bold text-2xl">NewpageConsult</span>
                     </a>
                 </div>
                 <nav class="hidden md:flex space-x-8 items-center">
@@ -109,7 +115,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative py-16 md:py-24 bg-gradient-to-r from-indigo-600 to-primary">
+    <section class="relative py-16 md:py-24 bg-primary -to-r from-indigo-600 to-primary">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl mx-auto text-center text-white">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -120,7 +126,7 @@
                 </p>
                 <div class="max-w-xl mx-auto">
                     <div class="relative">
-                        <input type="text" id="tutor-search" placeholder="Search by name, subject, or expertise..." class="w-full px-5 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent">
+                        <input type="text" id="tutor-search" placeholder="Search by name, subject, or expertise..." class="w-full px-5 py-3 rounded-full bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent">
                         <button class="absolute right-2 top-2 bg-accent hover:bg-accent/90 text-white p-1 rounded-full w-8 h-8 flex items-center justify-center">
                             <i class="fas fa-search"></i>
                         </button>
@@ -131,7 +137,7 @@
     </section>
 
     <!-- Filter Section -->
-    <section class="py-8 bg-white border-b">
+    <section class="py-8 bg-white ">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
                 <div class="flex flex-wrap items-center gap-4">
@@ -207,7 +213,7 @@
                 <p class="text-xl mb-8 text-white/80">
                     Are you passionate about education and helping students achieve their academic goals? We're always looking for qualified tutors to join our team.
                 </p>
-                <a href="#" class="inline-block bg-white text-primary px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">
+                <a href="/index.html#contact" class="inline-block bg-white text-primary px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">
                     Apply to Become a Tutor
                 </a>
             </div>
@@ -224,13 +230,13 @@
                         Empowering students to achieve academic excellence through personalized tutoring.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-white transition">
+                        <a href="https://www.facebook.com/profile.php?id=100083712878044" class="text-gray-300 hover:text-white transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">
+                        <a href="https://www.instagram.com/newpage_ec/" class="text-gray-300 hover:text-white transition">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition">
@@ -241,12 +247,13 @@
                 <div>
                     <h3 class="text-xl font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
-                        <li><a href="index.html#services" class="text-gray-300 hover:text-white transition">Services</a></li>
-                        <li><a href="index.html#subjects" class="text-gray-300 hover:text-white transition">Subjects</a></li>
-                        <li><a href="tutors.html" class="text-gray-300 hover:text-white transition">Our Tutors</a></li>
-                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                        <li><a href="/#home" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="/#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="/#subjects" class="text-gray-300 hover:text-white transition">Subjects</a></li>
+                        <li><a href="/#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a></li>
+                        <li><a href="/#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a></li>
+                        <li><a href="/#team" class="text-gray-300 hover:text-white transition">Our Team</a></li>
+                        <li><a href="/#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -265,15 +272,15 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>123 Education Street, Suite 456<br>New York, NY 10001</span>
+                            <span>3 Wilmot Point Rd<br/>Victoria Island, Lagos, Nigeria 106104</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone-alt mt-1 mr-3"></i>
-                            <span>(555) 123-4567</span>
+                            <span>+234 803 478 6633</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-3"></i>
-                            <span>info@newpageedu.com</span>
+                            <span>info@newpageconsult.com</span>
                         </li>
                     </ul>
                 </div>
@@ -290,7 +297,7 @@
     <div id="tutor-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
         <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div class="p-6" id="modal-content">
-                <!-- Modal content will be inserted here by JavaScript -->
+                Modal content will be inserted here by JavaScript
             </div>
             <div class="border-t px-6 py-4 flex justify-end">
                 <button id="close-modal" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md">Close</button>
@@ -318,8 +325,7 @@
                 rating: 4.9,
                 bio: "Dr. Johnson holds a Ph.D. in Applied Mathematics and has been teaching for over 15 years. He specializes in advanced calculus, differential equations, and theoretical physics.",
                 education: "Ph.D. in Applied Mathematics, MIT",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 2,
@@ -331,8 +337,7 @@
                 rating: 4.8,
                 bio: "Sarah is a published author with a Master's in English Literature. She excels at helping students improve their writing skills and develop a deeper understanding of literary works.",
                 education: "M.A. in English Literature, Columbia University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 3,
@@ -344,8 +349,7 @@
                 rating: 4.7,
                 bio: "James has a background in biochemistry and molecular biology. He makes complex scientific concepts accessible and engaging for students of all levels.",
                 education: "M.S. in Biochemistry, Stanford University",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 4,
@@ -357,8 +361,7 @@
                 rating: 5.0,
                 bio: "Emily is a software engineer with a passion for teaching. She specializes in programming languages, algorithms, and discrete mathematics.",
                 education: "B.S. in Computer Science, UC Berkeley",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$70/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 5,
@@ -370,8 +373,7 @@
                 rating: 4.6,
                 bio: "David brings history to life with his engaging teaching style. He specializes in world history, American history, and historical research methods.",
                 education: "Ph.D. in History, Yale University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$50/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 6,
@@ -383,8 +385,7 @@
                 rating: 4.9,
                 bio: "Lisa is a native Spanish speaker with extensive experience teaching Spanish as a second language. She uses immersive techniques to help students become fluent.",
                 education: "M.A. in Spanish Language and Literature, NYU",
-                location: "Available for online sessions only",
-                hourlyRate: "$45/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 7,
@@ -396,8 +397,7 @@
                 rating: 4.7,
                 bio: "Robert specializes in making complex physics concepts understandable. He has experience teaching at both high school and college levels.",
                 education: "Ph.D. in Physics, Princeton University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 8,
@@ -409,8 +409,7 @@
                 rating: 4.8,
                 bio: "Jennifer has a background in molecular biology and genetics. She excels at breaking down complex biological processes into understandable concepts.",
                 education: "Ph.D. in Molecular Biology, Johns Hopkins University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$60/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 9,
@@ -422,8 +421,7 @@
                 rating: 4.9,
                 bio: "Thomas specializes in SAT and ACT prep, with a focus on the math sections. His students consistently improve their scores by 100+ points.",
                 education: "M.Ed. in Education, Harvard University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$75/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 10,
@@ -435,8 +433,7 @@
                 rating: 4.7,
                 bio: "Maria specializes in helping students improve their reading comprehension and writing skills. She also offers specialized SAT and ACT verbal preparation.",
                 education: "M.A. in Education, Teachers College, Columbia University",
-                location: "Available for online sessions only",
-                hourlyRate: "$55/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 11,
@@ -448,8 +445,7 @@
                 rating: 5.0,
                 bio: "Daniel is a classically trained pianist with extensive teaching experience. He works with students of all ages and skill levels, from beginners to advanced.",
                 education: "M.M. in Piano Performance, Juilliard School",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$70/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 12,
@@ -461,8 +457,7 @@
                 rating: 4.8,
                 bio: "Olivia is a practicing artist and art educator. She teaches various techniques and mediums, as well as art history and appreciation.",
                 education: "M.F.A. in Fine Arts, Rhode Island School of Design",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$50/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 13,
@@ -474,8 +469,7 @@
                 rating: 4.6,
                 bio: "William has a background in economics and finance. He specializes in microeconomics, macroeconomics, and business principles.",
                 education: "M.B.A., Wharton School of Business",
-                location: "Available for online sessions only",
-                hourlyRate: "$65/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 14,
@@ -487,8 +481,7 @@
                 rating: 4.9,
                 bio: "Sophia has a background in clinical psychology and social research. She helps students understand human behavior and social dynamics.",
                 education: "Ph.D. in Psychology, University of Chicago",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$60/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 15,
@@ -500,8 +493,7 @@
                 rating: 4.8,
                 bio: "Christopher is a software developer who teaches programming languages including Python, Java, and C++. He specializes in algorithm design and data structures.",
                 education: "M.S. in Computer Science, Georgia Tech",
-                location: "Available for online sessions only",
-                hourlyRate: "$75/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 16,
@@ -513,8 +505,7 @@
                 rating: 4.7,
                 bio: "Natalie makes chemistry accessible and fun. She specializes in general chemistry, organic chemistry, and biochemistry.",
                 education: "Ph.D. in Chemistry, University of Michigan",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 17,
@@ -526,8 +517,7 @@
                 rating: 4.9,
                 bio: "Andrew is an engineer with a passion for teaching physics and engineering principles. He excels at helping students apply theoretical concepts to real-world problems.",
                 education: "Ph.D. in Mechanical Engineering, Caltech",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$70/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 18,
@@ -539,8 +529,7 @@
                 rating: 4.8,
                 bio: "Rebecca is a professional writer and editor who helps students improve their writing skills. She specializes in essay writing, creative writing, and grammar.",
                 education: "M.F.A. in Creative Writing, Iowa Writers' Workshop",
-                location: "Available for online sessions only",
-                hourlyRate: "$50/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 19,
@@ -552,8 +541,7 @@
                 rating: 4.7,
                 bio: "Jonathan specializes in statistics and probability. He helps students understand statistical concepts and their applications in various fields.",
                 education: "Ph.D. in Statistics, University of Pennsylvania",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 20,
@@ -565,8 +553,7 @@
                 rating: 4.8,
                 bio: "Amanda is passionate about biology and environmental science. She makes learning about ecosystems, organisms, and environmental issues engaging and relevant.",
                 education: "M.S. in Environmental Science, University of Washington",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 21,
@@ -578,8 +565,7 @@
                 rating: 4.6,
                 bio: "Kevin specializes in physical chemistry and quantum mechanics. He excels at explaining complex scientific concepts in an accessible way.",
                 education: "Ph.D. in Physical Chemistry, Cornell University",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 22,
@@ -591,8 +577,7 @@
                 rating: 4.9,
                 bio: "Lauren brings history and political science to life through engaging storytelling and critical analysis. She specializes in American and European history.",
                 education: "Ph.D. in History, University of Virginia",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 23,
@@ -604,8 +589,7 @@
                 rating: 4.7,
                 bio: "Brandon specializes in SAT and ACT math preparation. His strategic approach helps students maximize their scores and build confidence.",
                 education: "M.Ed. in Mathematics Education, Vanderbilt University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 24,
@@ -617,8 +601,7 @@
                 rating: 5.0,
                 bio: "Michelle is a native Mandarin speaker who teaches Chinese language and culture. She uses immersive techniques to help students develop fluency.",
                 education: "M.A. in Chinese Language and Literature, Beijing University",
-                location: "Available for online sessions only",
-                hourlyRate: "$50/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 25,
@@ -630,8 +613,7 @@
                 rating: 4.8,
                 bio: "Ryan is a professional guitarist and music educator. He teaches various styles including classical, jazz, rock, and folk guitar.",
                 education: "B.M. in Guitar Performance, Berklee College of Music",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$60/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 26,
@@ -643,8 +625,7 @@
                 rating: 4.9,
                 bio: "Jessica specializes in elementary and middle school mathematics. She makes math fun and accessible for younger students.",
                 education: "M.Ed. in Elementary Education, Boston College",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$45/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 27,
@@ -656,8 +637,7 @@
                 rating: 4.7,
                 bio: "Eric is an astrophysicist who makes the wonders of the universe accessible to students. He specializes in physics, astronomy, and cosmology.",
                 education: "Ph.D. in Astrophysics, University of Arizona",
-                location: "Available for online sessions only",
-                hourlyRate: "$70/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 28,
@@ -669,8 +649,7 @@
                 rating: 4.8,
                 bio: "Stephanie specializes in teaching English as a second language. She helps non-native speakers improve their fluency, grammar, and pronunciation.",
                 education: "M.A. in TESOL, Georgetown University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$50/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 29,
@@ -682,8 +661,7 @@
                 rating: 4.9,
                 bio: "Jason is a web developer who teaches HTML, CSS, JavaScript, and various web frameworks. He helps students build real-world projects.",
                 education: "M.S. in Computer Science, University of Illinois",
-                location: "Available for online sessions only",
-                hourlyRate: "$75/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 30,
@@ -695,8 +673,7 @@
                 rating: 4.8,
                 bio: "Rachel is a graphic designer and art educator. She teaches drawing, painting, and digital design to students of all skill levels.",
                 education: "M.F.A. in Graphic Design, Parsons School of Design",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 31,
@@ -708,8 +685,7 @@
                 rating: 4.7,
                 bio: "Mark has a background in human anatomy and physiology. He helps pre-med and nursing students master complex biological concepts.",
                 education: "M.D., Johns Hopkins University",
-                location: "Available for online sessions only",
-                hourlyRate: "$80/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 32,
@@ -721,8 +697,7 @@
                 rating: 4.9,
                 bio: "Nicole specializes in calculus and advanced mathematics. She breaks down complex mathematical concepts into understandable steps.",
                 education: "Ph.D. in Mathematics, University of Michigan",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 33,
@@ -734,8 +709,7 @@
                 rating: 4.8,
                 bio: "Anthony is a native Spanish speaker who teaches Spanish language and Latin American culture. He uses conversational methods to build fluency.",
                 education: "M.A. in Hispanic Studies, Brown University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$50/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 34,
@@ -747,8 +721,7 @@
                 rating: 4.7,
                 bio: "Samantha specializes in organic chemistry. She helps students understand reaction mechanisms and molecular structures.",
                 education: "Ph.D. in Organic Chemistry, UCLA",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 35,
@@ -760,8 +733,7 @@
                 rating: 4.6,
                 bio: "Brian makes history and geography engaging through storytelling and visual aids. He specializes in world history and cultural geography.",
                 education: "Ph.D. in History, University of Texas",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 36,
@@ -773,8 +745,7 @@
                 rating: 4.9,
                 bio: "Katherine is a published author who teaches creative writing and literary analysis. She helps students find their unique voice and style.",
                 education: "M.F.A. in Creative Writing, University of Iowa",
-                location: "Available for online sessions only",
-                hourlyRate: "$55/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 37,
@@ -786,8 +757,7 @@
                 rating: 4.8,
                 bio: "Timothy specializes in theoretical physics and advanced mathematics. He helps students understand complex physical phenomena and mathematical proofs.",
                 education: "Ph.D. in Theoretical Physics, MIT",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$75/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 38,
@@ -799,8 +769,7 @@
                 rating: 4.7,
                 bio: "Laura has a background in cognitive neuroscience. She helps students understand the biological basis of behavior and mental processes.",
                 education: "Ph.D. in Neuroscience, Stanford University",
-                location: "Available for online sessions only",
-                hourlyRate: "$65/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 39,
@@ -812,8 +781,7 @@
                 rating: 4.8,
                 bio: "Steven has a background in finance and economics. He helps students understand economic theories and their real-world applications.",
                 education: "M.B.A., Harvard Business School",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$70/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 40,
@@ -825,8 +793,7 @@
                 rating: 4.9,
                 bio: "Melissa specializes in genetics and molecular biology. She makes complex genetic concepts accessible and engaging.",
                 education: "Ph.D. in Genetics, University of California, San Francisco",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 41,
@@ -838,8 +805,7 @@
                 rating: 4.8,
                 bio: "Gregory specializes in artificial intelligence and machine learning. He helps students understand AI algorithms and their applications.",
                 education: "Ph.D. in Computer Science, Carnegie Mellon University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$80/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 42,
@@ -851,8 +817,7 @@
                 rating: 4.7,
                 bio: "Cynthia brings art history to life through engaging discussions and visual analysis. She specializes in Renaissance and Modern art.",
                 education: "Ph.D. in Art History, New York University",
-                location: "Available for online sessions only",
-                hourlyRate: "$55/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 43,
@@ -864,8 +829,7 @@
                 rating: 4.9,
                 bio: "Patrick is a composer and music theorist. He helps students understand music theory, composition, and ear training.",
                 education: "D.M.A. in Composition, Juilliard School",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 44,
@@ -877,8 +841,7 @@
                 rating: 4.6,
                 bio: "Heather specializes in physical chemistry and thermodynamics. She helps students understand the mathematical aspects of chemistry and physics.",
                 education: "Ph.D. in Physical Chemistry, University of Chicago",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 45,
@@ -890,8 +853,7 @@
                 rating: 4.8,
                 bio: "Dennis is an engineer who teaches applied mathematics and engineering principles. He helps students solve real-world engineering problems.",
                 education: "Ph.D. in Electrical Engineering, Stanford University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$75/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 46,
@@ -903,8 +865,7 @@
                 rating: 4.9,
                 bio: "Victoria helps students improve their public speaking and presentation skills. She also teaches effective writing and communication.",
                 education: "M.A. in Communication, Northwestern University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$55/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 47,
@@ -916,8 +877,7 @@
                 rating: 4.7,
                 bio: "Kenneth specializes in ecology and environmental biology. He helps students understand ecosystems, biodiversity, and conservation.",
                 education: "Ph.D. in Ecology, University of California, Davis",
-                location: "Available for online sessions only",
-                hourlyRate: "$60/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 48,
@@ -929,8 +889,7 @@
                 rating: 4.8,
                 bio: "Diana is a native French speaker who teaches French language and culture. She uses immersive techniques to help students develop fluency.",
                 education: "M.A. in French Literature, Sorbonne University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$50/hour"
+                location: "Available for online and in-person sessions"
             },
             {
                 id: 49,
@@ -942,8 +901,7 @@
                 rating: 4.9,
                 bio: "Adam specializes in graduate school entrance exams. He teaches effective test-taking strategies for the GMAT, GRE, and other standardized tests.",
                 education: "M.B.A., Wharton School of Business",
-                location: "Available for online sessions only",
-                hourlyRate: "$85/hour"
+                location: "Available for online sessions only"
             },
             {
                 id: 50,
@@ -955,8 +913,7 @@
                 rating: 4.8,
                 bio: "Christine specializes in statistics and data analysis. She helps students understand statistical methods and their applications in research.",
                 education: "Ph.D. in Statistics, Duke University",
-                location: "Available for online and in-person sessions",
-                hourlyRate: "$65/hour"
+                location: "Available for online and in-person sessions"
             }
         ];
 
@@ -1011,7 +968,6 @@
                         </div>
                         <p class="text-gray-700 mb-4 line-clamp-3">${tutor.bio}</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-800 font-semibold">${tutor.hourlyRate}</span>
                             <button class="view-profile-btn bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition" data-id="${tutor.id}">View Profile</button>
                         </div>
                     </div>
@@ -1164,9 +1120,7 @@
                             </div>
                             <p class="text-primary font-medium mt-2">${tutor.subjects.join(', ')}</p>
                             <p class="text-gray-600 text-sm">${tutor.experience} experience</p>
-                            <p class="text-gray-800 font-semibold mt-4">${tutor.hourlyRate}</p>
-                            <button class="w-full bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition mt-4">Book a Session</button>
-                            <button class="w-full bg-white border border-primary text-primary px-4 py-2 rounded-md hover:bg-gray-50 transition mt-2">Message Tutor</button>
+                            
                         </div>
                     </div>
                     <div class="md:w-2/3">
@@ -1187,54 +1141,7 @@
                         <h3 class="text-xl font-bold mb-4">Subjects</h3>
                         <div class="flex flex-wrap gap-2 mb-6">
                             ${tutor.subjects.map(subject => `<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">${subject}</span>`).join('')}
-                        </div>
-                        
-                        <h3 class="text-xl font-bold mb-4">Schedule</h3>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-6">
-                            <p class="text-gray-700">Contact this tutor to check availability. Most tutors respond within 24 hours.</p>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold mb-4">Reviews</h3>
-                        <div class="space-y-4">
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <div class="flex justify-between">
-                                    <div class="flex items-center">
-                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Reviewer" class="w-10 h-10 rounded-full mr-3">
-                                        <div>
-                                            <h4 class="font-semibold">Sarah M.</h4>
-                                            <p class="text-gray-500 text-sm">2 months ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="text-gray-700 mt-2">Excellent tutor! Very knowledgeable and patient. Helped my daughter improve her understanding of complex topics and her grades went up significantly after just a few sessions.</p>
-                            </div>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <div class="flex justify-between">
-                                    <div class="flex items-center">
-                                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Reviewer" class="w-10 h-10 rounded-full mr-3">
-                                        <div>
-                                            <h4 class="font-semibold">Michael T.</h4>
-                                            <p class="text-gray-500 text-sm">1 month ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="text-gray-700 mt-2">Great experience overall. Very thorough explanations and flexible with scheduling.</p>
-                            </div>
-                        </div>
+                        </div>                  
                     </div>
                 </div>
             `;
