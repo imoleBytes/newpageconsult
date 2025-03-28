@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Tutors | Newpage Edu Consult</title>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
 
     <!-- <script>
         tailwind.config = {
@@ -66,1067 +69,1341 @@
             color: #F59E0B;
         }
     </style> -->
-
-</head>
-<body class="font-sans text-gray-800">
+  </head>
+  <body class="font-sans text-gray-800">
     <!-- Header/Navigation -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="flex-shrink-0 flex items-center">
-                        <span class="text-primary font-bold text-2xl">NewpageConsult</span>
-                    </a>
-                </div>
-                <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-gray-700 hover:text-primary font-medium">Home</a>
-                    <a href="/about.html" class="text-gray-700 hover:text-primary font-medium">About</a>
-                    <a href="/index.html#services" class="text-gray-700 hover:text-primary font-medium">Services</a>
-                    <a href="/index.html#subjects" class="text-gray-700 hover:text-primary font-medium">Subjects</a>
-                    <a href="/index.html#how-it-works" class="text-gray-700 hover:text-primary font-medium">How It Works</a>
-                    <a href="/index.html#testimonials" class="text-gray-700 hover:text-primary font-medium">Testimonials</a>
-                    <a href="/index.html#team" class="text-gray-700 hover:text-primary font-medium">Our Team</a>
-                    <a href="/tutors.html" class="text-gray-700 hover:text-primary font-medium">Tutors</a>
-                    <a href="/index.html#contact" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition">Get Started</a>
-                </nav>
-                <div class="flex items-center md:hidden">
-                    <button type="button" class="text-gray-700 hover:text-primary" id="mobile-menu-button">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="flex-shrink-0 flex items-center">
+              <span class="text-primary font-bold text-2xl"
+                >NewpageConsult</span
+              >
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-8 items-center">
+            <a href="/" class="text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="/about.html"
+              class="text-gray-700 hover:text-primary font-medium"
+              >About</a
+            >
+            <a
+              href="/index.html#services"
+              class="text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="/index.html#subjects"
+              class="text-gray-700 hover:text-primary font-medium"
+              >Subjects</a
+            >
+            <a
+              href="/index.html#how-it-works"
+              class="text-gray-700 hover:text-primary font-medium"
+              >How It Works</a
+            >
+            <a
+              href="/index.html#testimonials"
+              class="text-gray-700 hover:text-primary font-medium"
+              >Testimonials</a
+            >
+            <a
+              href="/index.html#team"
+              class="text-gray-700 hover:text-primary font-medium"
+              >Our Team</a
+            >
+            <a
+              href="/tutors.html"
+              class="text-gray-700 hover:text-primary font-medium"
+              >Tutors</a
+            >
+            <a
+              href="/index.html#contact"
+              class="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
+              >Get Started</a
+            >
+          </nav>
+          <div class="flex items-center md:hidden">
+            <button
+              type="button"
+              class="text-gray-700 hover:text-primary"
+              id="mobile-menu-button"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- Mobile menu -->
-        <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="/" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Home</a>
-                <a href="/about.html" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">About</a>
-                <a href="/index.html#services" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Services</a>
-                <a href="/index.html#subjects" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Subjects</a>
-                <a href="/index.html#how-it-works" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">How It Works</a>
-                <a href="/index.html#testimonials" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Testimonials</a>
-                <a href="/index.html#team" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Our Team</a>
-                <a href="/tutors.html" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Tutors</a>
-                <a href="/index.html#contact" class="block px-3 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition">Get Started</a>
-            </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        class="hidden md:hidden bg-white border-t border-gray-200"
+        id="mobile-menu"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="/"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >About</a
+          >
+          <a
+            href="/index.html#services"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Services</a
+          >
+          <a
+            href="/index.html#subjects"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Subjects</a
+          >
+          <a
+            href="/index.html#how-it-works"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >How It Works</a
+          >
+          <a
+            href="/index.html#testimonials"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Testimonials</a
+          >
+          <a
+            href="/index.html#team"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Our Team</a
+          >
+          <a
+            href="/tutors.html"
+            class="block px-3 py-2 text-gray-700 hover:text-primary font-medium"
+            >Tutors</a
+          >
+          <a
+            href="/index.html#contact"
+            class="block px-3 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition"
+            >Get Started</a
+          >
         </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative py-16 md:py-24 bg-primary -to-r from-indigo-600 to-primary">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl mx-auto text-center text-white">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                    Meet Our Expert Tutors
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 text-gray-100">
-                    Discover the perfect tutor to help you achieve your academic goals
-                </p>
-                <div class="max-w-xl mx-auto">
-                    <div class="relative">
-                        <input type="text" id="tutor-search" placeholder="Search by name, subject, or expertise..." class="w-full px-5 py-3 rounded-full bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent">
-                        <button class="absolute right-2 top-2 bg-accent hover:bg-accent/90 text-white p-1 rounded-full w-8 h-8 flex items-center justify-center">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+    <section
+      class="relative py-16 md:py-24 bg-primary -to-r from-indigo-600 to-primary"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl mx-auto text-center text-white">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
+            Meet Our Expert Tutors
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-100">
+            Discover the perfect tutor to help you achieve your academic goals
+          </p>
+          <div class="max-w-xl mx-auto">
+            <div class="relative">
+              <input
+                type="text"
+                id="tutor-search"
+                placeholder="Search by name, subject, or expertise..."
+                class="w-full px-5 py-3 rounded-full bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent"
+              />
+              <button
+                class="absolute right-2 top-2 bg-accent hover:bg-accent/90 text-white p-1 rounded-full w-8 h-8 flex items-center justify-center"
+              >
+                <i class="fas fa-search"></i>
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Filter Section -->
-    <section class="py-8 bg-white ">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-                <div class="flex flex-wrap items-center gap-4">
-                    <span class="font-medium">Filter by:</span>
-                    <select id="subject-filter" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">All Subjects</option>
-                        <option value="Mathematics">Mathematics</option>
-                        <option value="English">English</option>
-                        <option value="Science">Science</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="History">History</option>
-                        <option value="Geography">Geography</option>
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Foreign Languages">Foreign Languages</option>
-                        <option value="Test Preparation">Test Preparation</option>
-                        <option value="Music">Music</option>
-                        <option value="Art">Art</option>
-                    </select>
-                    <select id="experience-filter" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">All Experience Levels</option>
-                        <option value="1-3">1-3 years</option>
-                        <option value="4-7">4-7 years</option>
-                        <option value="8-12">8-12 years</option>
-                        <option value="13+">13+ years</option>
-                    </select>
-                    <select id="rating-filter" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">All Ratings</option>
-                        <option value="5">5 Stars</option>
-                        <option value="4">4+ Stars</option>
-                        <option value="3">3+ Stars</option>
-                    </select>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <span class="font-medium">Sort by:</span>
-                    <select id="sort-option" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="name-asc">Name (A-Z)</option>
-                        <option value="name-desc">Name (Z-A)</option>
-                        <option value="rating-desc">Highest Rating</option>
-                        <option value="experience-desc">Most Experienced</option>
-                    </select>
-                </div>
-            </div>
+    <section class="py-8 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0"
+        >
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="font-medium">Filter by:</span>
+            <select
+              id="subject-filter"
+              class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="">All Subjects</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="English">English</option>
+              <option value="Science">Science</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Biology">Biology</option>
+              <option value="History">History</option>
+              <option value="Geography">Geography</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Foreign Languages">Foreign Languages</option>
+              <option value="Test Preparation">Test Preparation</option>
+              <option value="Music">Music</option>
+              <option value="Art">Art</option>
+            </select>
+            <select
+              id="experience-filter"
+              class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="">All Experience Levels</option>
+              <option value="1-3">1-3 years</option>
+              <option value="4-7">4-7 years</option>
+              <option value="8-12">8-12 years</option>
+              <option value="13+">13+ years</option>
+            </select>
+            <select
+              id="rating-filter"
+              class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="">All Ratings</option>
+              <option value="5">5 Stars</option>
+              <option value="4">4+ Stars</option>
+              <option value="3">3+ Stars</option>
+            </select>
+          </div>
+          <div class="flex items-center space-x-4">
+            <span class="font-medium">Sort by:</span>
+            <select
+              id="sort-option"
+              class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="rating-desc">Highest Rating</option>
+              <option value="experience-desc">Most Experienced</option>
+            </select>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Tutors Grid Section -->
     <section class="py-16 bg-pattern">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold" id="tutors-count">Showing all 50 tutors</h2>
-            </div>
-            
-            <div id="tutors-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tutor cards will be inserted here by JavaScript -->
-            </div>
-            
-            <!-- Pagination -->
-            <div class="mt-12 flex justify-center">
-                <div id="pagination" class="flex space-x-2">
-                    <!-- Pagination buttons will be inserted here by JavaScript -->
-                </div>
-            </div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold" id="tutors-count">
+            Showing all 50 tutors
+          </h2>
         </div>
+
+        <div
+          id="tutors-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Tutor cards will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+          <div id="pagination" class="flex space-x-2">
+            <!-- Pagination buttons will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Join Our Team Section -->
     <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Our Team of Expert Tutors</h2>
-                <p class="text-xl mb-8 text-white/80">
-                    Are you passionate about education and helping students achieve their academic goals? We're always looking for qualified tutors to join our team.
-                </p>
-                <a href="/index.html#contact" class="inline-block bg-white text-primary px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">
-                    Apply to Become a Tutor
-                </a>
-            </div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Join Our Team of Expert Tutors
+          </h2>
+          <p class="text-xl mb-8 text-white/80">
+            Are you passionate about education and helping students achieve
+            their academic goals? We're always looking for qualified tutors to
+            join our team.
+          </p>
+          <a
+            href="/index.html#contact"
+            class="inline-block bg-white text-primary px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition"
+          >
+            Apply to Become a Tutor
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Newpage Edu Consult</h3>
-                    <p class="text-gray-300 mb-6">
-                        Empowering students to achieve academic excellence through personalized tutoring.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/profile.php?id=100083712878044" class="text-gray-300 hover:text-white transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/newpage_ec/" class="text-gray-300 hover:text-white transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/#home" class="text-gray-300 hover:text-white transition">Home</a></li>
-                        <li><a href="/#services" class="text-gray-300 hover:text-white transition">Services</a></li>
-                        <li><a href="/#subjects" class="text-gray-300 hover:text-white transition">Subjects</a></li>
-                        <li><a href="/#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a></li>
-                        <li><a href="/#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a></li>
-                        <li><a href="/#team" class="text-gray-300 hover:text-white transition">Our Team</a></li>
-                        <li><a href="/#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Services</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">In-Home Tutoring</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Online Tutoring</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Group Sessions</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Test Preparation</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Homework Help</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Summer Programs</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Contact Us</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>3 Wilmot Point Rd<br/>Victoria Island, Lagos, Nigeria 106104</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
-                            <span>+234 803 478 6633</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3"></i>
-                            <span>info@newpageconsult.com</span>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div>
+            <h3 class="text-xl font-bold mb-6">Newpage Edu Consult</h3>
+            <p class="text-gray-300 mb-6">
+              Empowering students to achieve academic excellence through
+              personalized tutoring.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083712878044"
+                class="text-gray-300 hover:text-white transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/newpage_ec/"
+                class="text-gray-300 hover:text-white transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
-                <p class="text-gray-400">
-                    &copy; 2025 Newpage Edu Consult. All rights reserved.
-                </p>
-            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/#home"
+                  class="text-gray-300 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#services"
+                  class="text-gray-300 hover:text-white transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#subjects"
+                  class="text-gray-300 hover:text-white transition"
+                  >Subjects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#how-it-works"
+                  class="text-gray-300 hover:text-white transition"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#testimonials"
+                  class="text-gray-300 hover:text-white transition"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#team"
+                  class="text-gray-300 hover:text-white transition"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/#contact"
+                  class="text-gray-300 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >In-Home Tutoring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >Online Tutoring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >Group Sessions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >Test Preparation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >Homework Help</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white transition"
+                  >Summer Programs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span
+                  >3 Wilmot Point Rd<br />Victoria Island, Lagos, Nigeria
+                  106104</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                <span>+234 803 478 6633</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>info@newpageconsult.com</span>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Newpage Edu Consult. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Tutor Modal -->
-    <div id="tutor-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
-        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="p-6" id="modal-content">
-                Modal content will be inserted here by JavaScript
-            </div>
-            <div class="border-t px-6 py-4 flex justify-end">
-                <button id="close-modal" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md">Close</button>
-            </div>
+    <div
+      id="tutor-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-6" id="modal-content">
+          Modal content will be inserted here by JavaScript
         </div>
+        <div class="border-t px-6 py-4 flex justify-end">
+          <button
+            id="close-modal"
+            class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
         });
 
-        // Tutors data - 50 tutors with various specializations
-        const tutors = [
-            {
-                id: 1,
-                name: "Dr. Michael Johnson",
-                photo: "https://randomuser.me/api/portraits/men/32.jpg",
-                subjects: ["Mathematics", "Physics"],
-                experience: "15+ years",
-                experienceYears: "13+",
-                rating: 4.9,
-                bio: "Dr. Johnson holds a Ph.D. in Applied Mathematics and has been teaching for over 15 years. He specializes in advanced calculus, differential equations, and theoretical physics.",
-                education: "Ph.D. in Applied Mathematics, MIT",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 2,
-                name: "Sarah Williams",
-                photo: "https://randomuser.me/api/portraits/women/44.jpg",
-                subjects: ["English", "Literature"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Sarah is a published author with a Master's in English Literature. She excels at helping students improve their writing skills and develop a deeper understanding of literary works.",
-                education: "M.A. in English Literature, Columbia University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 3,
-                name: "James Rodriguez",
-                photo: "https://randomuser.me/api/portraits/men/67.jpg",
-                subjects: ["Chemistry", "Biology"],
-                experience: "10 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "James has a background in biochemistry and molecular biology. He makes complex scientific concepts accessible and engaging for students of all levels.",
-                education: "M.S. in Biochemistry, Stanford University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 4,
-                name: "Emily Chen",
-                photo: "https://randomuser.me/api/portraits/women/79.jpg",
-                subjects: ["Computer Science", "Mathematics"],
-                experience: "6 years",
-                experienceYears: "4-7",
-                rating: 5.0,
-                bio: "Emily is a software engineer with a passion for teaching. She specializes in programming languages, algorithms, and discrete mathematics.",
-                education: "B.S. in Computer Science, UC Berkeley",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 5,
-                name: "David Thompson",
-                photo: "https://randomuser.me/api/portraits/men/52.jpg",
-                subjects: ["History", "Geography"],
-                experience: "12 years",
-                experienceYears: "8-12",
-                rating: 4.6,
-                bio: "David brings history to life with his engaging teaching style. He specializes in world history, American history, and historical research methods.",
-                education: "Ph.D. in History, Yale University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 6,
-                name: "Lisa Martinez",
-                photo: "https://randomuser.me/api/portraits/women/28.jpg",
-                subjects: ["Spanish", "Foreign Languages"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Lisa is a native Spanish speaker with extensive experience teaching Spanish as a second language. She uses immersive techniques to help students become fluent.",
-                education: "M.A. in Spanish Language and Literature, NYU",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 7,
-                name: "Robert Wilson",
-                photo: "https://randomuser.me/api/portraits/men/41.jpg",
-                subjects: ["Physics", "Mathematics"],
-                experience: "14 years",
-                experienceYears: "13+",
-                rating: 4.7,
-                bio: "Robert specializes in making complex physics concepts understandable. He has experience teaching at both high school and college levels.",
-                education: "Ph.D. in Physics, Princeton University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 8,
-                name: "Jennifer Lee",
-                photo: "https://randomuser.me/api/portraits/women/56.jpg",
-                subjects: ["Biology", "Chemistry"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.8,
-                bio: "Jennifer has a background in molecular biology and genetics. She excels at breaking down complex biological processes into understandable concepts.",
-                education: "Ph.D. in Molecular Biology, Johns Hopkins University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 9,
-                name: "Thomas Brown",
-                photo: "https://randomuser.me/api/portraits/men/33.jpg",
-                subjects: ["Test Preparation", "Mathematics"],
-                experience: "11 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Thomas specializes in SAT and ACT prep, with a focus on the math sections. His students consistently improve their scores by 100+ points.",
-                education: "M.Ed. in Education, Harvard University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 10,
-                name: "Maria Garcia",
-                photo: "https://randomuser.me/api/portraits/women/62.jpg",
-                subjects: ["English", "Test Preparation"],
-                experience: "5 years",
-                experienceYears: "4-7",
-                rating: 4.7,
-                bio: "Maria specializes in helping students improve their reading comprehension and writing skills. She also offers specialized SAT and ACT verbal preparation.",
-                education: "M.A. in Education, Teachers College, Columbia University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 11,
-                name: "Daniel Kim",
-                photo: "https://randomuser.me/api/portraits/men/75.jpg",
-                subjects: ["Music", "Piano"],
-                experience: "15 years",
-                experienceYears: "13+",
-                rating: 5.0,
-                bio: "Daniel is a classically trained pianist with extensive teaching experience. He works with students of all ages and skill levels, from beginners to advanced.",
-                education: "M.M. in Piano Performance, Juilliard School",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 12,
-                name: "Olivia Taylor",
-                photo: "https://randomuser.me/api/portraits/women/31.jpg",
-                subjects: ["Art", "Art History"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Olivia is a practicing artist and art educator. She teaches various techniques and mediums, as well as art history and appreciation.",
-                education: "M.F.A. in Fine Arts, Rhode Island School of Design",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 13,
-                name: "William Davis",
-                photo: "https://randomuser.me/api/portraits/men/22.jpg",
-                subjects: ["Economics", "Business"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.6,
-                bio: "William has a background in economics and finance. He specializes in microeconomics, macroeconomics, and business principles.",
-                education: "M.B.A., Wharton School of Business",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 14,
-                name: "Sophia Anderson",
-                photo: "https://randomuser.me/api/portraits/women/14.jpg",
-                subjects: ["Psychology", "Sociology"],
-                experience: "6 years",
-                experienceYears: "4-7",
-                rating: 4.9,
-                bio: "Sophia has a background in clinical psychology and social research. She helps students understand human behavior and social dynamics.",
-                education: "Ph.D. in Psychology, University of Chicago",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 15,
-                name: "Christopher Martin",
-                photo: "https://randomuser.me/api/portraits/men/55.jpg",
-                subjects: ["Computer Science", "Programming"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.8,
-                bio: "Christopher is a software developer who teaches programming languages including Python, Java, and C++. He specializes in algorithm design and data structures.",
-                education: "M.S. in Computer Science, Georgia Tech",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 16,
-                name: "Natalie Wright",
-                photo: "https://randomuser.me/api/portraits/women/23.jpg",
-                subjects: ["Chemistry", "Science"],
-                experience: "4 years",
-                experienceYears: "4-7",
-                rating: 4.7,
-                bio: "Natalie makes chemistry accessible and fun. She specializes in general chemistry, organic chemistry, and biochemistry.",
-                education: "Ph.D. in Chemistry, University of Michigan",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 17,
-                name: "Andrew Clark",
-                photo: "https://randomuser.me/api/portraits/men/18.jpg",
-                subjects: ["Physics", "Engineering"],
-                experience: "10 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Andrew is an engineer with a passion for teaching physics and engineering principles. He excels at helping students apply theoretical concepts to real-world problems.",
-                education: "Ph.D. in Mechanical Engineering, Caltech",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 18,
-                name: "Rebecca Lewis",
-                photo: "https://randomuser.me/api/portraits/women/49.jpg",
-                subjects: ["English", "Writing"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Rebecca is a professional writer and editor who helps students improve their writing skills. She specializes in essay writing, creative writing, and grammar.",
-                education: "M.F.A. in Creative Writing, Iowa Writers' Workshop",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 19,
-                name: "Jonathan Green",
-                photo: "https://randomuser.me/api/portraits/men/36.jpg",
-                subjects: ["Mathematics", "Statistics"],
-                experience: "12 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Jonathan specializes in statistics and probability. He helps students understand statistical concepts and their applications in various fields.",
-                education: "Ph.D. in Statistics, University of Pennsylvania",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 20,
-                name: "Amanda Turner",
-                photo: "https://randomuser.me/api/portraits/women/37.jpg",
-                subjects: ["Biology", "Environmental Science"],
-                experience: "5 years",
-                experienceYears: "4-7",
-                rating: 4.8,
-                bio: "Amanda is passionate about biology and environmental science. She makes learning about ecosystems, organisms, and environmental issues engaging and relevant.",
-                education: "M.S. in Environmental Science, University of Washington",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 21,
-                name: "Kevin Patel",
-                photo: "https://randomuser.me/api/portraits/men/82.jpg",
-                subjects: ["Chemistry", "Physics"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.6,
-                bio: "Kevin specializes in physical chemistry and quantum mechanics. He excels at explaining complex scientific concepts in an accessible way.",
-                education: "Ph.D. in Physical Chemistry, Cornell University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 22,
-                name: "Lauren Miller",
-                photo: "https://randomuser.me/api/portraits/women/53.jpg",
-                subjects: ["History", "Political Science"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Lauren brings history and political science to life through engaging storytelling and critical analysis. She specializes in American and European history.",
-                education: "Ph.D. in History, University of Virginia",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 23,
-                name: "Brandon Scott",
-                photo: "https://randomuser.me/api/portraits/men/43.jpg",
-                subjects: ["Mathematics", "Test Preparation"],
-                experience: "6 years",
-                experienceYears: "4-7",
-                rating: 4.7,
-                bio: "Brandon specializes in SAT and ACT math preparation. His strategic approach helps students maximize their scores and build confidence.",
-                education: "M.Ed. in Mathematics Education, Vanderbilt University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 24,
-                name: "Michelle Wong",
-                photo: "https://randomuser.me/api/portraits/women/66.jpg",
-                subjects: ["Foreign Languages", "Chinese"],
-                experience: "11 years",
-                experienceYears: "8-12",
-                rating: 5.0,
-                bio: "Michelle is a native Mandarin speaker who teaches Chinese language and culture. She uses immersive techniques to help students develop fluency.",
-                education: "M.A. in Chinese Language and Literature, Beijing University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 25,
-                name: "Ryan Cooper",
-                photo: "https://randomuser.me/api/portraits/men/29.jpg",
-                subjects: ["Music", "Guitar"],
-                experience: "14 years",
-                experienceYears: "13+",
-                rating: 4.8,
-                bio: "Ryan is a professional guitarist and music educator. He teaches various styles including classical, jazz, rock, and folk guitar.",
-                education: "B.M. in Guitar Performance, Berklee College of Music",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 26,
-                name: "Jessica Adams",
-                photo: "https://randomuser.me/api/portraits/women/19.jpg",
-                subjects: ["Mathematics", "Elementary Education"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Jessica specializes in elementary and middle school mathematics. She makes math fun and accessible for younger students.",
-                education: "M.Ed. in Elementary Education, Boston College",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 27,
-                name: "Eric Nelson",
-                photo: "https://randomuser.me/api/portraits/men/61.jpg",
-                subjects: ["Physics", "Astronomy"],
-                experience: "15 years",
-                experienceYears: "13+",
-                rating: 4.7,
-                bio: "Eric is an astrophysicist who makes the wonders of the universe accessible to students. He specializes in physics, astronomy, and cosmology.",
-                education: "Ph.D. in Astrophysics, University of Arizona",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 28,
-                name: "Stephanie Carter",
-                photo: "https://randomuser.me/api/portraits/women/27.jpg",
-                subjects: ["English", "ESL"],
-                experience: "10 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Stephanie specializes in teaching English as a second language. She helps non-native speakers improve their fluency, grammar, and pronunciation.",
-                education: "M.A. in TESOL, Georgetown University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 29,
-                name: "Jason Mitchell",
-                photo: "https://randomuser.me/api/portraits/men/17.jpg",
-                subjects: ["Computer Science", "Web Development"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Jason is a web developer who teaches HTML, CSS, JavaScript, and various web frameworks. He helps students build real-world projects.",
-                education: "M.S. in Computer Science, University of Illinois",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 30,
-                name: "Rachel Foster",
-                photo: "https://randomuser.me/api/portraits/women/39.jpg",
-                subjects: ["Art", "Design"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.8,
-                bio: "Rachel is a graphic designer and art educator. She teaches drawing, painting, and digital design to students of all skill levels.",
-                education: "M.F.A. in Graphic Design, Parsons School of Design",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 31,
-                name: "Mark Wilson",
-                photo: "https://randomuser.me/api/portraits/men/91.jpg",
-                subjects: ["Biology", "Anatomy"],
-                experience: "12 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Mark has a background in human anatomy and physiology. He helps pre-med and nursing students master complex biological concepts.",
-                education: "M.D., Johns Hopkins University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 32,
-                name: "Nicole Harris",
-                photo: "https://randomuser.me/api/portraits/women/74.jpg",
-                subjects: ["Mathematics", "Calculus"],
-                experience: "6 years",
-                experienceYears: "4-7",
-                rating: 4.9,
-                bio: "Nicole specializes in calculus and advanced mathematics. She breaks down complex mathematical concepts into understandable steps.",
-                education: "Ph.D. in Mathematics, University of Michigan",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 33,
-                name: "Anthony Lopez",
-                photo: "https://randomuser.me/api/portraits/men/47.jpg",
-                subjects: ["Foreign Languages", "Spanish"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Anthony is a native Spanish speaker who teaches Spanish language and Latin American culture. He uses conversational methods to build fluency.",
-                education: "M.A. in Hispanic Studies, Brown University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 34,
-                name: "Samantha Young",
-                photo: "https://randomuser.me/api/portraits/women/93.jpg",
-                subjects: ["Chemistry", "Organic Chemistry"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Samantha specializes in organic chemistry. She helps students understand reaction mechanisms and molecular structures.",
-                education: "Ph.D. in Organic Chemistry, UCLA",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 35,
-                name: "Brian Taylor",
-                photo: "https://randomuser.me/api/portraits/men/38.jpg",
-                subjects: ["History", "Geography"],
-                experience: "11 years",
-                experienceYears: "8-12",
-                rating: 4.6,
-                bio: "Brian makes history and geography engaging through storytelling and visual aids. He specializes in world history and cultural geography.",
-                education: "Ph.D. in History, University of Texas",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 36,
-                name: "Katherine Bell",
-                photo: "https://randomuser.me/api/portraits/women/85.jpg",
-                subjects: ["English", "Creative Writing"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.9,
-                bio: "Katherine is a published author who teaches creative writing and literary analysis. She helps students find their unique voice and style.",
-                education: "M.F.A. in Creative Writing, University of Iowa",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 37,
-                name: "Timothy Reed",
-                photo: "https://randomuser.me/api/portraits/men/59.jpg",
-                subjects: ["Physics", "Mathematics"],
-                experience: "14 years",
-                experienceYears: "13+",
-                rating: 4.8,
-                bio: "Timothy specializes in theoretical physics and advanced mathematics. He helps students understand complex physical phenomena and mathematical proofs.",
-                education: "Ph.D. in Theoretical Physics, MIT",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 38,
-                name: "Laura Collins",
-                photo: "https://randomuser.me/api/portraits/women/12.jpg",
-                subjects: ["Psychology", "Neuroscience"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Laura has a background in cognitive neuroscience. She helps students understand the biological basis of behavior and mental processes.",
-                education: "Ph.D. in Neuroscience, Stanford University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 39,
-                name: "Steven Baker",
-                photo: "https://randomuser.me/api/portraits/men/26.jpg",
-                subjects: ["Economics", "Finance"],
-                experience: "10 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Steven has a background in finance and economics. He helps students understand economic theories and their real-world applications.",
-                education: "M.B.A., Harvard Business School",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 40,
-                name: "Melissa Ward",
-                photo: "https://randomuser.me/api/portraits/women/63.jpg",
-                subjects: ["Biology", "Genetics"],
-                experience: "6 years",
-                experienceYears: "4-7",
-                rating: 4.9,
-                bio: "Melissa specializes in genetics and molecular biology. She makes complex genetic concepts accessible and engaging.",
-                education: "Ph.D. in Genetics, University of California, San Francisco",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 41,
-                name: "Gregory Ross",
-                photo: "https://randomuser.me/api/portraits/men/71.jpg",
-                subjects: ["Computer Science", "Artificial Intelligence"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Gregory specializes in artificial intelligence and machine learning. He helps students understand AI algorithms and their applications.",
-                education: "Ph.D. in Computer Science, Carnegie Mellon University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 42,
-                name: "Cynthia Morgan",
-                photo: "https://randomuser.me/api/portraits/women/42.jpg",
-                subjects: ["Art History", "Humanities"],
-                experience: "11 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Cynthia brings art history to life through engaging discussions and visual analysis. She specializes in Renaissance and Modern art.",
-                education: "Ph.D. in Art History, New York University",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 43,
-                name: "Patrick Murphy",
-                photo: "https://randomuser.me/api/portraits/men/83.jpg",
-                subjects: ["Music", "Music Theory"],
-                experience: "15 years",
-                experienceYears: "13+",
-                rating: 4.9,
-                bio: "Patrick is a composer and music theorist. He helps students understand music theory, composition, and ear training.",
-                education: "D.M.A. in Composition, Juilliard School",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 44,
-                name: "Heather Phillips",
-                photo: "https://randomuser.me/api/portraits/women/33.jpg",
-                subjects: ["Chemistry", "Physics"],
-                experience: "7 years",
-                experienceYears: "4-7",
-                rating: 4.6,
-                bio: "Heather specializes in physical chemistry and thermodynamics. She helps students understand the mathematical aspects of chemistry and physics.",
-                education: "Ph.D. in Physical Chemistry, University of Chicago",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 45,
-                name: "Dennis Campbell",
-                photo: "https://randomuser.me/api/portraits/men/49.jpg",
-                subjects: ["Mathematics", "Engineering"],
-                experience: "13 years",
-                experienceYears: "13+",
-                rating: 4.8,
-                bio: "Dennis is an engineer who teaches applied mathematics and engineering principles. He helps students solve real-world engineering problems.",
-                education: "Ph.D. in Electrical Engineering, Stanford University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 46,
-                name: "Victoria Evans",
-                photo: "https://randomuser.me/api/portraits/women/24.jpg",
-                subjects: ["English", "Public Speaking"],
-                experience: "8 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Victoria helps students improve their public speaking and presentation skills. She also teaches effective writing and communication.",
-                education: "M.A. in Communication, Northwestern University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 47,
-                name: "Kenneth Rogers",
-                photo: "https://randomuser.me/api/portraits/men/94.jpg",
-                subjects: ["Biology", "Ecology"],
-                experience: "10 years",
-                experienceYears: "8-12",
-                rating: 4.7,
-                bio: "Kenneth specializes in ecology and environmental biology. He helps students understand ecosystems, biodiversity, and conservation.",
-                education: "Ph.D. in Ecology, University of California, Davis",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 48,
-                name: "Diana Stewart",
-                photo: "https://randomuser.me/api/portraits/women/76.jpg",
-                subjects: ["Foreign Languages", "French"],
-                experience: "12 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Diana is a native French speaker who teaches French language and culture. She uses immersive techniques to help students develop fluency.",
-                education: "M.A. in French Literature, Sorbonne University",
-                location: "Available for online and in-person sessions"
-            },
-            {
-                id: 49,
-                name: "Adam Peterson",
-                photo: "https://randomuser.me/api/portraits/men/15.jpg",
-                subjects: ["Test Preparation", "GMAT", "GRE"],
-                experience: "9 years",
-                experienceYears: "8-12",
-                rating: 4.9,
-                bio: "Adam specializes in graduate school entrance exams. He teaches effective test-taking strategies for the GMAT, GRE, and other standardized tests.",
-                education: "M.B.A., Wharton School of Business",
-                location: "Available for online sessions only"
-            },
-            {
-                id: 50,
-                name: "Christine Hayes",
-                photo: "https://randomuser.me/api/portraits/women/51.jpg",
-                subjects: ["Mathematics", "Statistics"],
-                experience: "11 years",
-                experienceYears: "8-12",
-                rating: 4.8,
-                bio: "Christine specializes in statistics and data analysis. She helps students understand statistical methods and their applications in research.",
-                education: "Ph.D. in Statistics, Duke University",
-                location: "Available for online and in-person sessions"
-            }
-        ];
+      // Tutors data - 50 tutors with various specializations
+      const tutors = [
+        {
+          id: 1,
+          name: "Mr. Abdulai Oladipupo",
+          photo: "https://ik.imagekit.io/newpage/newpage/oladipupo.png",
+          subjects: ["Science", "Biology", "Chemistry"],
+          experience: "5+ years",
+          experienceYears: "13+",
+          grade: "Second class upper",
+          bio: "Mr. Abdulai is a graduate Biochemistry and seasoned science teacher who has shown passion for teaching various students the basics of sciences. He is always ready to meet your wards' needs in sciences.",
+          education: "B.Sc Biochemistry (FUNAAB)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 2,
+          name: "Olorunmaiye Oluwakemi",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Olorunmaiye_passport_id.jpg",
+          subjects: ["Mathematics"],
+          experience: "5+ years",
+          experienceYears: "8-12",
+          grade: "Second Class Upper",
+          bio: "Graduate of Petroleum and Gas Engineering and has over 5 years teaching experience in both Mathematics and Further Mathematics. Simplifying Mathematics concepts making it easy for students to grasp thereby improving students performance all year round.",
+          education:
+            "B.Eng in Petroleum Engineering, University of Portharcourt",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 3,
+          name: "Adedoyin Oluwaseun James",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Adedoyin%20Oluwaseun%20James.jpg",
+          subjects: ["Mathematics"],
+          experience: "4+ years",
+          experienceYears: "8-12",
+          grade: "",
+          bio: "Adedoyin Oluwaseun James, a Mathematics graduate, specializes in Ordinary Differential Equations, Numerical Analysis, and Geometry. With four years of teaching experience, he excels in breaking down complex concepts, making Mathematics easier for secondary school and university students to understand",
+          education: "BSc. Mathematics",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 4,
+          name: "Effiong Etoro Andrew",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Effiong%20Etoro%20Andrew.png",
+          subjects: ["Mathematics"],
+          experience: "3+ years",
+          experienceYears: "4-7",
+          grade: "Second class upper",
+          bio: "A graduate of Mathematics and a dedicated online mathematics teacher with a passion for making math engaging and accessible to students. With experience teaching various grade levels, I specialize in using interactive methods to simplify complex mathematical concepts. I also provide private tutoring in mathematics",
+          education:
+            "Bsc. Mathematics(MICHAEL OKPARA UNIVERSITY OF AGRICULTURE UMUDIKE,Abia state)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 5,
+          name: "Obinna Lawrence Unah",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Unah%20Obinna%20Lawrence.jpg",
+          subjects: [
+            "Mathematics",
+            "Physics",
+            "Calculus",
+            "C",
+            "C++",
+            "Python",
+            "MATLAB",
+            "Robotics",
+            "Web Development",
+          ],
+          experience: "5+ years",
+          experienceYears: "8-12",
+          grade: "First Class",
+          bio: "Obinna Lawrence is an electrical engineer and teacher. By combining my practical experience in the field with a passion for inspiring learners, I find immense joy in helping others grow and develop their skils.",
+          education: "B.Eng. Electrical & Electronics Engineering (FUAM)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 6,
+          name: "Okafor Sandra Uchechukwu",
+          photo: "https://ik.imagekit.io/newpage/newpage/Okafor%20Sandra.jpg",
+          subjects: ["Chemistry"],
+          experience: "4+ years",
+          experienceYears: "8-12",
+          grade: "Second class upper",
+          bio: "Okafor Sandra is a Chemistry graduate passionate about teaching and helping students excel. I specialize in simplifying complex concepts, lesson planning, and exam preparation, ensuring an engaging and effective learning experience. With a strong foundation in theoretical and practical chemistry, I am  dedicated to fostering student confidence and academic success.",
+          education: "Bsc. Edu (Chem) Uniben",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 7,
+          name: "Jeje Tolulope Precious",
+          photo: "https://ik.imagekit.io/newpage/newpage/Jeje%20Tolulope.png",
+          subjects: ["Mathematics"],
+          experience: "9+ years",
+          experienceYears: "13+",
+          grade: "Second class upper",
+          bio: "Tolulope Precious is a dedicated and seasoned Mathematics tutor who created an interactive, supportive and personalized learning environment for students. I have helped numerous students build confidence, develop deeper understanding and improve their grades in mathematics by taking the time to understand each student's unique learning style, strength and challenges.",
+          education: "B.Sc. (Ed.) Mathematics (UNIVERSITY OF LAGOS, AKOKA)",
+          location: "Available for online and in-person sessions",
+        },
+        {
+          id: 8,
+          name: "Mr. Daniel Ubong",
+          photo: "https://randomuser.me/api/portraits/women/56.jpg",
+          subjects: [
+            "Mathematics",
+            "Calculus",
+            "Python",
+            "PHP",
+            "JavaScript",
+            "Web Development",
+            "Database",
+            "Visual Assistant",
+          ],
+          experience: "4+ years",
+          experienceYears: "4-7",
+          grade: "Second Class upper",
+          bio: "Mr. Daniel is a mathematics educator with a degree from FUTMinna. With a strong passion for technology, he possesses skills in programming languages such as Python, Scratch, JavaScript, HTML, and PHP. Dedicated to sharing his knowledge and expertise, Mr. Daniel empowers students to reach their full potential.",
+          education: "Federal University of technology Minna. (Futminna)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 9,
+          name: "Hannah Ayomide Oyedeji",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Oyedeji%20Hannah%20Ayomide.png",
+          subjects: ["English Language"],
+          experience: "5+ years",
+          experienceYears: "8-12",
+          grade: "Second Class Upper",
+          bio: "Hannah's approach to teaching English is centered around creating an engaging, interactive, and personalized learning experience. With expertise in English comprehension, grammar, vocabulary, and creative writing, she establishes a positive and inclusive learning environment that encourages academic excellence and cultivates a deep appreciation for the English language.",
+          education: "B.A.(English Education) Osun State University",
+          location: "Available for online sessions",
+        },
+        {
+          id: 10,
+          name: "Dorcas Sanni",
+          photo: "https://ik.imagekit.io/newpage/newpage/Sanni%20Dorcas.png",
+          subjects: ["Science", "Mathematics"],
+          experience: "2+ years",
+          experienceYears: "4-7",
+          grade: "Second Class Upper",
+          bio: "Experienced tutor specializing in math and science, dedicated to making complex concepts simple and engaging.",
+          education: "B.Sc. Industrial Chemistry (University of Lagos)",
+          location: "Available for online and in-person sessions only",
+        },
+        {
+          id: 11,
+          name: "Lydia Eniola Ogunyemi",
+          photo: "https://ik.imagekit.io/newpage/newpage/Ogunyemi%20Eniola.jpg",
+          subjects: ["English", "Literature in English"],
+          experience: "5 years",
+          experienceYears: "13+",
+          grade: "Second Class Upper",
+          bio: "I am a passionate educator with 5 years of experience of teaching English Language both as first and second Language. I'm dedicated to helping students achieve their academic goals and fostering a love for learning. With a student-centered approach, I emphasize interactive learning, critical thinking, and creativity. Outside the classroom, I enjoy writing, reading and traveling . I'm excited to meet and work with you, sharing my knowledge to help you achieve your aspirations.",
+          education: "BA. Ed English and Education, Obafemi Awolowo University",
+          location: "Available for online sessions",
+        },
+        {
+          id: 12,
+          name: "Adedoyin Oluwabusolami C.",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/AdedoyinOluwabusola.png",
+          subjects: ["English"],
+          experience: "7+ years",
+          experienceYears: "8-12",
+          grade: "Second class upper",
+          bio: "",
+          education: "B.A English, M. A English University of Lagos",
+          location: "Available for online sessions",
+        },
+        {
+          id: 13,
+          name: "Orotunde Mariam Modupeola",
+          photo: "https://randomuser.me/api/portraits/men/22.jpg",
+          subjects: ["Mathematics"],
+          experience: "3+ years",
+          experienceYears: "8-12",
+          grade: "Second class Upper",
+          bio: "An experienced educator dedicated to creating engaging and effective learning environments. Committed to continuous learning, I strive to inspire and empower students for success.",
+          education: "B.Sc Statistics",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 14,
+          name: "Afolabi, Aanuoluwapo Isaac",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Afolabi%20Anuoluwapo.png",
+          subjects: ["Mathematics", "Sciences"],
+          experience: "7+ years",
+          experienceYears: "4-7",
+          grade: "Second Class Upper",
+          bio: "Enthusiastic and energetic Mathematician. Teaching is my craft.",
+          education:
+            "B.Tech Computer Engineering, Ladoke Akintola University of Technology, Oyo State. PGD, University of Ilorin.",
+          location: "Available for online sessions",
+        },
+        {
+          id: 15,
+          name: "Babatunde Sunmisola Grace",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Babatunde%20Sunmisola%20Grace.png",
+          subjects: ["English", "Literature in English"],
+          experience: "10 years",
+          experienceYears: "4-7",
+          grade: "Second Class Lower",
+          bio: "Dedicated English and Literature educator.Passionate about fostering a love for language and learning, and empowering students to succeed through critical thinking and effective communication.",
+          education:
+            "B.A Ed English language, Ekiti State University. Ado Ekiti.",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 16,
+          name: "Iyanuoluwapo Mary, OJO",
+          photo: "https://ik.imagekit.io/newpage/newpage/ojo_Mary.png",
+          subjects: ["Mathematics"],
+          experience: "3 years",
+          experienceYears: "4-7",
+          grade: "Second class upper",
+          bio: "Mary is a seasoned educator and data science expert with a passion for empowering students of all ages with mathematical and analytical skills. With a strong background in Statistics, Mary has developed a unique approach to teaching that combines theoretical foundations with practical applications.",
+          education: "B.Sc. Statistics (University of Ilorin, Nigeria.)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 17,
+          name: "SAGO Charity",
+          photo: "https://ik.imagekit.io/newpage/newpage/SAGO_CHARITY.png",
+          subjects: ["Mathematics"],
+          experience: "8 years",
+          experienceYears: "8-12",
+          grade: "Second class lower",
+          bio: "Charity is a passionate educator who is skilled in impacting students with Mathematical knowledge.",
+          education: "Bsc. Mathematics University of Ibadan",
+          location: "Available for online sessions",
+        },
+        {
+          id: 18,
+          name: "Adesanoye Michael O",
+          photo: "https://randomuser.me/api/portraits/women/49.jpg",
+          subjects: [
+            "Mathematics",
+            "Further Mathematics",
+            "sciences",
+            "social sciences",
+            "Elementary School Subjects",
+          ],
+          experience: "4+ years",
+          experienceYears: "8-12",
+          grade: "Second Class Upper",
+          bio: "Michael has a proven track record of adapting my teaching strategies to meet the individual needs of students from various backgrounds(curriculum) and age groups with a teaching approach that emphasizes creating an engaging and supportive learning environment where students feel valued and empowered to achieve their full potential. I utilize diverse teaching methods, such as game-based learning, interactive storytelling, and project-based activities, to make lessons enjoyable and interactive.",
+          education:
+            "Bsc. Mathematics Federal University of Agriculture, Abeokuta (Funaab)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 19,
+          name: "Khadijat Omotunde, YUSUF",
+          photo: "https://ik.imagekit.io/newpage/newpage/KHADIJAT-YUSUF-2.png",
+          subjects: ["Mathematics", "Further Mathematics"],
+          experience: "3+ years",
+          experienceYears: "8-12",
+          grade: "Second class upper",
+          bio: "Khadijat is a certified educator with B.Sc(Ed) in Education and Mathematics. She has experience in teaching and making learning engaging, simple and fun. Khadijat is passionate about making Mathematics accessible and engaging for students. As a dedicated teacher, she has worked with diverse learners, ensuring a solid grasp of fundamental math concepts. She specialises in breaking down Mathematical concepts into simple, engaging lessons, ensuring  a solid foundation for young learners.\
+                With a combination of academic knowledge, teaching experience and a passion for learning, Khadijat strives to inspire students, foster critical thinking, and make mathematics an enjoyable subject for all.",
+          education:
+            "B.Sc.Ed (mathematics) Obafemi Awolowo University, Ile-Ife, Osun state",
+          location: "Available for online and in-person sessions",
+        },
+        {
+          id: 20,
+          name: "Omolaja Boluwatife Eyiyemi",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Omolaja%20Boluwatife.png",
+          subjects: ["Science", "Biology", "Chemistry"],
+          experience: "2+ years",
+          experienceYears: "4-7",
+          grade: "Second class upper",
+          bio: "Boluwatife is an enthusiastic and empathetic teacher who is interested in inspiring curiosity in learners.",
+          education: "BSc. Biochemistry (LASU)",
+          location: "Available for online and in-person sessions",
+        },
+        {
+          id: 21,
+          name: "Orji Josiah",
+          photo: "https://ik.imagekit.io/newpage/newpage/Orji%20Josiah.jpg",
+          subjects: ["Mathematics", "Further Mathematics"],
+          experience: "4+ years",
+          experienceYears: "4-7",
+          grade: "First Class",
+          bio: "A passionate mathematics educator dedicated to making complex concepts accessible to learners at all levels, with a strong background in mathematics and committed to fostering understanding and confidence in every student.",
+          education: "B.Tech Mathematics",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 22,
+          name: "Olukayode Abigail",
+          photo: "https://ik.imagekit.io/newpage/newpage/Abigail.jpg",
+          subjects: ["Mathematics", "Further Mathematics"],
+          experience: "3+ years",
+          experienceYears: "8-12",
+          grade: "First Class",
+          bio: "Abigail  is a passionate and dedicated mathematics tutor whose approach to teaching goes beyond helping students pass exams. She creates a friendly and engaging learning environment where students develop critical thinking, problem-solving abilities, and a genuine love for learning.",
+          education: "B.Tech Mathematical Science(FUTA)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 23,
+          name: "Akande Opeyemi",
+          photo: "https://randomuser.me/api/portraits/men/43.jpg",
+          subjects: [
+            "Mathematics",
+            "Physics",
+            "Chemistry",
+            "Further Mathematics",
+          ],
+          experience: "4+ years",
+          experienceYears: "4-7",
+          grade: "Second class upper",
+          bio: "A Chemical Engineering graduate with a distinct background in mathematics, chemistry and physics that strives so hard to simplify problems in such a way that it would be easy to understand and recall.",
+          education: "B. Tech Chemical Engineering (LAUTECH)",
+          location: "Available for online and in-person sessions",
+        },
+        {
+          id: 24,
+          name: "Lydia O. Ajibade",
+          photo: "https://ik.imagekit.io/newpage/newpage/Ajibade%20Lydia.jpg",
+          subjects: ["Mathematics"],
+          experience: "2+ years",
+          experienceYears: "8-12",
+          grade: "Second class upper",
+          bio: "Lydia has a background in mathematics and she's adept at fostering engaging learning spaces which enhances student comprehension to unlock their full potential and achieve academic success. Making a positive impact on students' learning experiences and helping them develop a lifelong love for learning.",
+          education:
+            "B.Tech Mathematical Sciences Federal University of Technology, Akure.(FUTA)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 25,
+          name: "Paul Edobor",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Osas%20Paul%20Edobor.png",
+          subjects: [
+            "English",
+            "Literature",
+            "Creative Writing",
+            "Public Speaking",
+          ],
+          experience: "4+ years",
+          experienceYears: "13+",
+          grade: "Upper Second Class",
+          bio: "Through tried and trusted methodologies: interactive instruction, dynamic pedagogy, students centred approach, experience-based learning through real world associations, I help every language learner achieve their proficiency goals within the shortest possible duration. I help to instill communication confidence and love for language and the expression of it both in spoken and written form.",
+          education:
+            "B.A(Ed) in English Education. Ambrose Alli University, Ekpoma(AAUE)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 26,
+          name: "Oluwadamilola Fasunon",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Fasunon%20Oluwadamilola.png",
+          subjects: ["Science"],
+          experience: "2 years",
+          experienceYears: "8-12",
+          grade: "Second classlower",
+          bio: "Curiosity-driven scientist | Educator | Innovator. I'm oluwadamilola a passionate advocate for STEM education and research. With a strong foundation in Biology. As a dedicated educator, I inspire students to embrace the wonders of science, fostering a love for learning that extends beyond the classroom. Let's ignite curiosity, explore the unknown, and shape the future of science together!",
+          education: "Bsc(Ed) Biology University of Benin",
+          location: "Available for online sessions",
+        },
+        {
+          id: 27,
+          name: "Ovia Deborah Ewere",
+          photo: "https://ik.imagekit.io/newpage/newpage/Ovia%20Deborah.png",
+          subjects: ["Mathematics"],
+          experience: "3+ years",
+          experienceYears: "3+",
+          grade: "First Class",
+          bio: "Deborah is an enthusiastic and dedicated mathematics teacher with experience in secondary education. She is passionate about making mathematics easy and engaging for all students, helping them build both their skills and confidence. I focus on creating clear, well-structured lessons that cater to all range of learning abilities, ensuring every student has the support they need to succeed. With a strong understanding of the mathematics, I aim to inspire students and foster their academic growth.",
+          education:
+            "Bsc honours in mathematics and statistics. Ebonyi state university MSc in view",
+          location: "Remote and in-person",
+        },
+        {
+          id: 28,
+          name: "Agboola Oluwagbemisola",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Agboola%20Oluwagbemisola.png",
+          subjects: ["English", "Phonics"],
+          experience: "8+ years",
+          experienceYears: "8-12",
+          grade: "Second class lower",
+          bio: "Ms Oluwagbemisola is a detailed oriented Phonics and English Tutor, TEFL and TRCN certified. My experience in mentoring students and improving their love for reading using good diction makes me an excellent candidate to support you in fostering individual growth and curiosity through an exploratory curriculum.\
+                    My strong initiative and ability to cater to a diverse range of learners allow me to thrive in virtual environment and giving me room to; engage my students in multiple teaching methods, creating fun reading challenges, encouraging my students to be achievers and lifelong learners with a personalized approach to teaching that instills confidence in their abilities and potentials.",
+          education:
+            "NCE English and History ( Adeniran Ogunsanya College of Education) BE.D English Language and Education ( Lagos State University)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 29,
+          name: "Yahweh Hassan",
+          photo: "https://ik.imagekit.io/newpage/newpage/Yahweh%20Hassan.png",
+          subjects: ["Mathematics"],
+          experience: "6+ years",
+          experienceYears: "6-12",
+          grade: "First Class",
+          bio: 'Yahweh Hassan is a first-class engineering graduate with a passion for teaching Mathematics, Python, Excel, and Science. Whether in classrooms, remote sessions, or community tutorials, he thrives on simplifying complex concepts and helping students overcome the "math is hard" myth. With a teaching journey that began in secondary school, he remains committed to making learning engaging and accessible.',
+          education: "B.Eng Petroleum and Gas Engineering (Petroleum)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 30,
+          name: "Kolawole Esther",
+          photo: "https://randomuser.me/api/portraits/women/39.jpg",
+          subjects: ["English"],
+          experience: "10+ years",
+          experienceYears: "7-12",
+          grade: "Second class lower",
+          bio: "Esther is a dedicated English educator with over a decade of experience teaching both regular and special needs students. Passionate about fostering literacy and communication skills, she employs tailored strategies to support diverse learning needs. With expertise in differentiated instruction and inclusive education. She is committed to helping every student reach their full potential.",
+          education:
+            "MA English (in view, University of Ibadan). B.Ed English. (University of Ibadan",
+          location: "Available for online sessions",
+        },
+        {
+          id: 31,
+          name: "Idris Omolara",
+          photo: "https://randomuser.me/api/portraits/men/91.jpg",
+          subjects: ["French Language"],
+          experience: "5+ years",
+          experienceYears: "5-12",
+          grade: "",
+          bio: "Idris Omolara, a passionate French language tutor with a communicative approach. I have been teaching French for  5 years, both online and in-home. My goal is to help students of all levels become confident and fluent French speakers.I believe that language learning should be fun, interactive, and tailored to each student's needs. I use a communicative approach, focusing on conversation, listening, and cultural immersion. My lessons are engaging, dynamic, and adapted to each student's learning style. I am patient, supportive, and dedicated to helping my students achieve their language goals. Let's learn French together and discover the richness of French culture!",
+          education: "French Education",
+          location: "Available for online and home sessions",
+        },
+        {
+          id: 32,
+          name: "Akintunde Imoleayo Victoria",
+          photo: "https://randomuser.me/api/portraits/women/74.jpg",
+          subjects: ["English"],
+          experience: "10+ years",
+          experienceYears: "7-12",
+          grade: "Second Class Lower",
+          bio: "Akintunde Imoleayo Victoria is a dedicated English teacher who excels in creating engaging, student-centered learning environments. She tailors lessons to individual learning styles, fostering confidence and communication skills in her students. Through innovative teaching methods and meaningful connections, she encourages critical thinking and creativity. Her approach integrates modern educational techniques.",
+          education:
+            "MA English (in view, University of Ibadan). B.Ed English. (University of Ibadan)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 33,
+          name: "Alexsandra Ukatu",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Alexsandra%20Ukatu.png",
+          subjects: [
+            "Scratch",
+            "Web develoment",
+            "Python",
+            "SQL",
+            "Data Analytics",
+            "Power BI",
+            "Tableau",
+            "Looker",
+          ],
+          experience: "3+ years",
+          experienceYears: "3-5",
+          grade: "Second Class Upper",
+          bio: "With 3+ years as a data scientist, tutor,  and business intelligence professional, I specialize in simplifying complex concepts (especially data challenges). My passion lies in teaching—whether it’s breaking down technical skills, guiding learners through data wrangling, or helping them craft impactful visualizations. As a tutor, I focus on making learning engaging and practical, empowering students to tackle real-world coding challenges with confidence. Let's unlock your software potential together—one lesson at a time! 🚀",
+          education: "Doctor of Veterinary Medicine.",
+          location: "Available for online sessions",
+        },
+        {
+          id: 34,
+          name: "Favour Adeyinka",
+          photo: "https://randomuser.me/api/portraits/women/93.jpg",
+          subjects: ["Mathematics"],
+          experience: "3+ years",
+          experienceYears: "3-8",
+          grade: "second class Lower",
+          bio: "Favour is a dedicated mathematics teacher. She has experience with secondary and primary education, she’s concerned about laying a solid foundation on which students can build as they move forward in their academic pursuit. Having a solid understanding of the basics of mathematics makes it easier for students to understand the more complex concepts.",
+          education:
+            "B.Eng Petroleum and Gas Engineering (Gas)  University of Portharcourt MSc in view",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 35,
+          name: "Timilehin Ishola",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Ishola%20Timilehin%20Temilol.png",
+          subjects: ["English", "Literature"],
+          experience: "3 years",
+          experienceYears: "3-7",
+          grade: "Second Class Lower",
+          bio: "Timilehin is a passionate virtual English tutor who makes learning fun and engaging for primary and junior secondary students. She uses creative teaching methods, real life examples, and interactive activities to break down complex topics, making them easy to understand. Whether it’s preparing for tests, following a structured curriculum, or personalizing lessons to fit each student’s needs, she ensures that learning feels exciting and stress free.",
+          education: "B.A/Ed English Education Lagos State University",
+          location: "Available for online sessions",
+        },
+        {
+          id: 36,
+          name: "Afube, Chiwendu Faith",
+          photo: "https://randomuser.me/api/portraits/women/85.jpg",
+          subjects: ["English Language"],
+          experience: "2+ years",
+          experienceYears: "2-7",
+          grade: "second class Lower",
+          bio: "Faith is a dedicated and passionate English language tutor committed to helping students develop strong communication and writing skills. With over two years of experience, I specialize in making English learning engaging and accessible by simplifying complex grammar rules, enhancing vocabulary, and improving reading comprehension. My goal is to boost students' confidence, academic performance, and language proficiency.",
+          education: "B.A in English Language",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 37,
+          name: "OGBAZI VIVIAN",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Ogbazi%20Vivian%20Ijeoma.jpg",
+          subjects: ["English Language", "Literature"],
+          experience: "3+ years",
+          experienceYears: "3+",
+          grade: "Second Class Upper Division",
+          bio: "Ms Vivian is an enthusiastic and dedicated educator with a TEFL certification and a 4.49 CGPA in English. With over 3+ years of online teaching experience, I specialize in creating engaging, personalized lessons that foster a deep understanding of English, Phonics, Creative Writing, and Handwriting. I am passionate about inspiring students to achieve their full potential and develop a love for learning. known for my ability to tailor lessons to individual needs, making complex concepts accessible and enjoyable.",
+          education: "B.A English & Literature (M.A in View)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 38,
+          name: "Ige, Jesutojumi Mark",
+          photo: "https://ik.imagekit.io/newpage/newpage/IGE%20Mark.png",
+          subjects: ["Mathematics"],
+          experience: "4 years",
+          experienceYears: "4-8",
+          grade: "First Class",
+          bio: "Mark is a dedicated Mathematics tutor passionate about applying mathematical concepts to real-world problem-solving. With strong analytical and interpersonal skills, he creates a comfortable learning environment that students eagerly look forward to. Beyond academics, Mark serves as a compassionate counselor, helping students navigate personal challenges and build confidence. His engaging teaching style fosters critical thinking, problem-solving, and a positive mindset, earning him the consistent satisfaction of parents. Committed to both academic excellence and personal growth, he empowers students to thrive in their education and beyond.",
+          education: "B.Tech. Mathematical Sciences (FUTA)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 39,
+          name: "Ashaolu, Maryann Adedoyin",
+          photo: "https://ik.imagekit.io/newpage/newpage/Ashaolu%20Maryann.png",
+          subjects: ["English"],
+          experience: "5+ years",
+          experienceYears: "5-12",
+          grade: "First Class",
+          bio: "Maryann is a pasMsionate, energetic educator specializing in English, ESL, phonics, and Digital SAT prep. Using innovative teaching methods, she makes learning engaging and effective, helping students master reading, writing, and elocution with confidence. Beyond academics, Maryann inspires a lifelong love for learning, tailoring her approach to each student’s needs. Let her spark your curiosity and guide you to success!",
+          education: "B.Ed English ABU, Zaria",
+          location: "Available for online sessions",
+        },
+        {
+          id: 40,
+          name: "Faithfulness Oyedemi",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Oyedemi%20Faithfulness.png",
+          subjects: ["English"],
+          experience: "5+ years",
+          experienceYears: "4-7",
+          grade: "Second Class Upper",
+          bio: "Faithfulness Oyedemi is an experienced English tutor offering both online and in-person lessons. She earned a Bachelor of Education in English Education from Ekiti State University and teaches English grammar, composition, literature, and comprehension, as well as essay writing, creative writing, phonics for young learners and public speaking. Faithfulness is dedicated to academic excellence and adjusts her teaching to suit each student's needs, creating a respectful and supportive learning environment.",
+          education: "B.Ed English(EKSU)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 41,
+          name: "Albert Chidera Hope",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Albert%20Chidera%20Hope.png",
+          subjects: ["Mathematics"],
+          experience: "11+ years",
+          experienceYears: "11-15",
+          grade: "Second Class Lower",
+          bio: "Chidera is a dedicated and enthusiastic tutor aimed at helping students develop high concentration level and spontaneous rapid thinking ability. She arouse the interest of learners with various strategies that helps learners develop solving Mathematical problems as one of their hobbies.",
+          education: "B.Sc.Ed. Mathematics. University of Lagos State, Akoka",
+          location: "Available for online sessions",
+        },
+        {
+          id: 42,
+          name: "Okeowo, Oluwapelumi Esther",
+          photo: "https://randomuser.me/api/portraits/women/42.jpg",
+          subjects: ["Yoruba"],
+          experience: "1+ years",
+          experienceYears: "1-5",
+          grade: "Second Class Upper",
+          bio: "Esther is a seasoned Yoruba tutor who love to promote Yoruba language and culture. Having desire in seeing young people learning Yoruba and never forget her importance in the society.",
+          education: "B.A in Linguistics/Yoruba (Unilag)",
+          location: "Available for online sessions",
+        },
+        {
+          id: 43,
+          name: "Ogunlere Matthew Ayooluwa",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Ogunlere%20Matthew.png",
+          subjects: ["Music", "Music Theory"],
+          experience: "5+ years",
+          experienceYears: "5+",
+          grade: "Second Class Lower",
+          bio: "Matthew is a creative music teacher with 5 years of experience, educating students at elementary and middle schools. Plan and provide fun, dynamic music classes that spark children’s creativity, participation, and enthusiasm for the arts. Innovator focused on finding viable new ways to enhance learning for multiple students.",
+          education: "Certified in Music at Faith Music Institute, FUTA",
+          location: "Available for online sessions",
+        },
+        {
+          id: 44,
+          name: "Oyebamiji Yemisi Catherine",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Oyebamiji%20Yemisi.jpg",
+          subjects: [
+            "HTML",
+            "CSS",
+            "SCRATCH PROGRAMMING",
+            "BIOLOGY",
+            "CHEMISTRY",
+            "PHYSICS",
+          ],
+          experience: "5+ years",
+          experienceYears: "4-7",
+          grade: "Second Class Lower",
+          bio: "Ms. Catherine is a passionate science subject and coding educator with 5+ years of exoerience creating dynamic intertive coding projects that facilitate hands-on learning and critical thinking. Ommitted to leveraging innovative teaching tools and strategies to maximie student outcomes and drive continuous improvement in educational practices.",
+          education:
+            "Computer Science (Cross river University of technology, Calabar)",
+          location: "Available for online sessions only",
+        },
+        {
+          id: 45,
+          name: "Mr. Gabriel Michael Inawo",
+          photo:
+            "https://ik.imagekit.io/newpage/newpage/Gabriel%20Inawo%2011.png",
+          subjects: ["Science", "Chemistry", "Mathematics"],
+          experience: "5+ years",
+          experienceYears: "5+",
+          grade: "Second Class Upper",
+          bio: "Inawo  is a dedicated and passionate tutor with over 5+ of teaching experiences in science subjects at the Primary, Junior and Senior Secondary School levels. His in-depth knowledge of these subjects allows him to effectively convey complex scientific concepts to students in an engaging and accessible manner. His prowess in Mathematics and Science competitions have brought numerous accolades to his school and students…",
+          education:
+            "B.Sc Zoology (Unibadan),PGDE (NTI), M.Sc (Unilag) In view",
+          location: "Available for online and in-person sessions",
+        },
+      ];
 
-        // Variables for pagination
-        let currentPage = 1;
-        const tutorsPerPage = 9;
-        let filteredTutors = [...tutors];
+      // Variables for pagination
+      let currentPage = 1;
+      const tutorsPerPage = 9;
+      let filteredTutors = [...tutors];
 
-        // Function to render tutor cards
-        function renderTutors() {
-            const tutorsGrid = document.getElementById('tutors-grid');
-            tutorsGrid.innerHTML = '';
-            
-            // Calculate the tutors to show on the current page
-            const startIndex = (currentPage - 1) * tutorsPerPage;
-            const endIndex = startIndex + tutorsPerPage;
-            const tutorsToShow = filteredTutors.slice(startIndex, endIndex);
-            
-            // Update the tutors count
-            document.getElementById('tutors-count').textContent = `Showing ${startIndex + 1}-${Math.min(endIndex, filteredTutors.length)} of ${filteredTutors.length} tutors`;
-            
-            // Render each tutor card
-            tutorsToShow.forEach(tutor => {
-                const tutorCard = document.createElement('div');
-                tutorCard.className = 'tutor-card bg-white rounded-lg shadow-lg overflow-hidden';
-                
-                // Generate star rating HTML
-                let starsHtml = '';
-                const fullStars = Math.floor(tutor.rating);
-                const halfStar = tutor.rating % 1 >= 0.5;
-                
-                for (let i = 1; i <= 5; i++) {
-                    if (i <= fullStars) {
-                        starsHtml += '<i class="fas fa-star"></i>';
-                    } else if (i === fullStars + 1 && halfStar) {
-                        starsHtml += '<i class="fas fa-star-half-alt"></i>';
-                    } else {
-                        starsHtml += '<i class="far fa-star"></i>';
-                    }
-                }
-                
-                tutorCard.innerHTML = `
-                    <img src="${tutor.photo}" alt="${tutor.name}" class="w-full h-64 object-cover">
+      // Function to render tutor cards
+      function renderTutors() {
+        const tutorsGrid = document.getElementById("tutors-grid");
+        tutorsGrid.innerHTML = "";
+
+        // Calculate the tutors to show on the current page
+        const startIndex = (currentPage - 1) * tutorsPerPage;
+        const endIndex = startIndex + tutorsPerPage;
+        const tutorsToShow = filteredTutors.slice(startIndex, endIndex);
+
+        // Update the tutors count
+        document.getElementById("tutors-count").textContent = `Showing ${
+          startIndex + 1
+        }-${Math.min(endIndex, filteredTutors.length)} of ${
+          filteredTutors.length
+        } tutors`;
+
+        // Render each tutor card
+        tutorsToShow.forEach((tutor) => {
+          const tutorCard = document.createElement("div");
+          tutorCard.className =
+            "tutor-card bg-white rounded-lg shadow-lg overflow-hidden";
+
+          // Generate star rating HTML
+          // let starsHtml = "";
+          // const fullStars = Math.floor(tutor.rating);
+          // const halfStar = tutor.rating % 1 >= 0.5;
+
+          // for (let i = 1; i <= 5; i++) {
+          //   if (i <= fullStars) {
+          //     starsHtml += '<i class="fas fa-star"></i>';
+          //   } else if (i === fullStars + 1 && halfStar) {
+          //     starsHtml += '<i class="fas fa-star-half-alt"></i>';
+          //   } else {
+          //     starsHtml += '<i class="far fa-star"></i>';
+          //   }
+          // }
+
+          tutorCard.innerHTML = `
+                    <img src="${tutor.photo}" alt="${
+            tutor.name
+          }" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">${tutor.name}</h3>
-                            <span class="star-rating text-sm">${starsHtml} <span class="text-gray-700">(${tutor.rating})</span></span>
+                            <span class="text-gray-700">(${
+                              tutor.grade
+                            })</span></span>
                         </div>
                         <div class="mb-4">
-                            <p class="text-primary font-medium">${tutor.subjects.join(', ')}</p>
-                            <p class="text-gray-600 text-sm">${tutor.experience} experience</p>
+                            <p class="text-primary font-medium">${tutor.subjects.join(
+                              ", "
+                            )}</p>
+                            <p class="text-gray-600 text-sm">${
+                              tutor.experience
+                            } experience</p>
                         </div>
-                        <p class="text-gray-700 mb-4 line-clamp-3">${tutor.bio}</p>
+                        <p class="text-gray-700 mb-4 line-clamp-3">${
+                          tutor.bio
+                        }</p>
                         <div class="flex justify-between items-center">
-                            <button class="view-profile-btn bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition" data-id="${tutor.id}">View Profile</button>
+                            <button class="view-profile-btn bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition" data-id="${
+                              tutor.id
+                            }">View Profile</button>
                         </div>
                     </div>
                 `;
-                
-                tutorsGrid.appendChild(tutorCard);
-            });
-            
-            // Add event listeners to the view profile buttons
-            document.querySelectorAll('.view-profile-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    const tutorId = parseInt(this.getAttribute('data-id'));
-                    showTutorModal(tutorId);
-                });
-            });
-            
-            // Render pagination
-            renderPagination();
+
+          tutorsGrid.appendChild(tutorCard);
+        });
+
+        // Add event listeners to the view profile buttons
+        document.querySelectorAll(".view-profile-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            const tutorId = parseInt(this.getAttribute("data-id"));
+            showTutorModal(tutorId);
+          });
+        });
+
+        // Render pagination
+        renderPagination();
+      }
+
+      // Function to render pagination
+      function renderPagination() {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
+
+        const totalPages = Math.ceil(filteredTutors.length / tutorsPerPage);
+
+        // Previous button
+        const prevButton = document.createElement("button");
+        prevButton.className = "pagination-button px-3 py-1 rounded-md";
+        prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        prevButton.disabled = currentPage === 1;
+        prevButton.addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderTutors();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+        pagination.appendChild(prevButton);
+
+        // Page numbers
+        const maxVisiblePages = 5;
+        let startPage = Math.max(
+          1,
+          currentPage - Math.floor(maxVisiblePages / 2)
+        );
+        let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+        if (endPage - startPage + 1 < maxVisiblePages) {
+          startPage = Math.max(1, endPage - maxVisiblePages + 1);
         }
-        
-        // Function to render pagination
-        function renderPagination() {
-            const pagination = document.getElementById('pagination');
-            pagination.innerHTML = '';
-            
-            const totalPages = Math.ceil(filteredTutors.length / tutorsPerPage);
-            
-            // Previous button
-            const prevButton = document.createElement('button');
-            prevButton.className = 'pagination-button px-3 py-1 rounded-md';
-            prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
-            prevButton.disabled = currentPage === 1;
-            prevButton.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    renderTutors();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-            pagination.appendChild(prevButton);
-            
-            // Page numbers
-            const maxVisiblePages = 5;
-            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
-            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
-            
-            if (endPage - startPage + 1 < maxVisiblePages) {
-                startPage = Math.max(1, endPage - maxVisiblePages + 1);
-            }
-            
-            // First page button if not visible
-            if (startPage > 1) {
-                const firstPageButton = document.createElement('button');
-                firstPageButton.className = 'pagination-button px-3 py-1 rounded-md';
-                firstPageButton.textContent = '1';
-                firstPageButton.addEventListener('click', () => {
-                    currentPage = 1;
-                    renderTutors();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-                pagination.appendChild(firstPageButton);
-                
-                if (startPage > 2) {
-                    const ellipsis = document.createElement('span');
-                    ellipsis.className = 'px-2 py-1';
-                    ellipsis.textContent = '...';
-                    pagination.appendChild(ellipsis);
-                }
-            }
-            
-            // Page buttons
-            for (let i = startPage; i <= endPage; i++) {
-                const pageButton = document.createElement('button');
-                pageButton.className = `pagination-button px-3 py-1 rounded-md ${i === currentPage ? 'active' : ''}`;
-                pageButton.textContent = i;
-                pageButton.addEventListener('click', () => {
-                    currentPage = i;
-                    renderTutors();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-                pagination.appendChild(pageButton);
-            }
-            
-            // Last page button if not visible
-            if (endPage < totalPages) {
-                if (endPage < totalPages - 1) {
-                    const ellipsis = document.createElement('span');
-                    ellipsis.className = 'px-2 py-1';
-                    ellipsis.textContent = '...';
-                    pagination.appendChild(ellipsis);
-                }
-                
-                const lastPageButton = document.createElement('button');
-                lastPageButton.className = 'pagination-button px-3 py-1 rounded-md';
-                lastPageButton.textContent = totalPages;
-                lastPageButton.addEventListener('click', () => {
-                    currentPage = totalPages;
-                    renderTutors();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-                pagination.appendChild(lastPageButton);
-            }
-            
-            // Next button
-            const nextButton = document.createElement('button');
-            nextButton.className = 'pagination-button px-3 py-1 rounded-md';
-            nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
-            nextButton.disabled = currentPage === totalPages;
-            nextButton.addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    renderTutors();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-            pagination.appendChild(nextButton);
+
+        // First page button if not visible
+        if (startPage > 1) {
+          const firstPageButton = document.createElement("button");
+          firstPageButton.className = "pagination-button px-3 py-1 rounded-md";
+          firstPageButton.textContent = "1";
+          firstPageButton.addEventListener("click", () => {
+            currentPage = 1;
+            renderTutors();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          pagination.appendChild(firstPageButton);
+
+          if (startPage > 2) {
+            const ellipsis = document.createElement("span");
+            ellipsis.className = "px-2 py-1";
+            ellipsis.textContent = "...";
+            pagination.appendChild(ellipsis);
+          }
         }
-        
-        // Function to show tutor modal
-        function showTutorModal(tutorId) {
-            const tutor = tutors.find(t => t.id === tutorId);
-            if (!tutor) return;
-            
-            const modal = document.getElementById('tutor-modal');
-            const modalContent = document.getElementById('modal-content');
-            
-            // Generate star rating HTML
-            let starsHtml = '';
-            const fullStars = Math.floor(tutor.rating);
-            const halfStar = tutor.rating % 1 >= 0.5;
-            
-            for (let i = 1; i <= 5; i++) {
-                if (i <= fullStars) {
-                    starsHtml += '<i class="fas fa-star"></i>';
-                } else if (i === fullStars + 1 && halfStar) {
-                    starsHtml += '<i class="fas fa-star-half-alt"></i>';
-                } else {
-                    starsHtml += '<i class="far fa-star"></i>';
-                }
-            }
-            
-            modalContent.innerHTML = `
+
+        // Page buttons
+        for (let i = startPage; i <= endPage; i++) {
+          const pageButton = document.createElement("button");
+          pageButton.className = `pagination-button px-3 py-1 rounded-md ${
+            i === currentPage ? "active" : ""
+          }`;
+          pageButton.textContent = i;
+          pageButton.addEventListener("click", () => {
+            currentPage = i;
+            renderTutors();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          pagination.appendChild(pageButton);
+        }
+
+        // Last page button if not visible
+        if (endPage < totalPages) {
+          if (endPage < totalPages - 1) {
+            const ellipsis = document.createElement("span");
+            ellipsis.className = "px-2 py-1";
+            ellipsis.textContent = "...";
+            pagination.appendChild(ellipsis);
+          }
+
+          const lastPageButton = document.createElement("button");
+          lastPageButton.className = "pagination-button px-3 py-1 rounded-md";
+          lastPageButton.textContent = totalPages;
+          lastPageButton.addEventListener("click", () => {
+            currentPage = totalPages;
+            renderTutors();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+          pagination.appendChild(lastPageButton);
+        }
+
+        // Next button
+        const nextButton = document.createElement("button");
+        nextButton.className = "pagination-button px-3 py-1 rounded-md";
+        nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        nextButton.disabled = currentPage === totalPages;
+        nextButton.addEventListener("click", () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderTutors();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+        pagination.appendChild(nextButton);
+      }
+
+      // Function to show tutor modal
+      function showTutorModal(tutorId) {
+        const tutor = tutors.find((t) => t.id === tutorId);
+        if (!tutor) return;
+
+        const modal = document.getElementById("tutor-modal");
+        const modalContent = document.getElementById("modal-content");
+
+        // Generate star rating HTML
+        let starsHtml = "";
+        const fullStars = Math.floor(tutor.rating);
+        const halfStar = tutor.rating % 1 >= 0.5;
+
+        for (let i = 1; i <= 5; i++) {
+          if (i <= fullStars) {
+            starsHtml += '<i class="fas fa-star"></i>';
+          } else if (i === fullStars + 1 && halfStar) {
+            starsHtml += '<i class="fas fa-star-half-alt"></i>';
+          } else {
+            starsHtml += '<i class="far fa-star"></i>';
+          }
+        }
+
+        modalContent.innerHTML = `
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="md:w-1/3">
-                        <img src="${tutor.photo}" alt="${tutor.name}" class="w-full h-auto rounded-lg">
+                        <img src="${tutor.photo}" alt="${
+          tutor.name
+        }" class="w-full h-auto rounded-lg">
                         <div class="mt-4">
                             <div class="flex items-center justify-between">
                                 <h3 class="text-xl font-bold">${tutor.name}</h3>
-                                <span class="star-rating">${starsHtml} <span class="text-gray-700">(${tutor.rating})</span></span>
+                                <span class="star-rating">${starsHtml} <span class="text-gray-700">(${
+          tutor.rating
+        })</span></span>
                             </div>
-                            <p class="text-primary font-medium mt-2">${tutor.subjects.join(', ')}</p>
-                            <p class="text-gray-600 text-sm">${tutor.experience} experience</p>
-                            
+                            <p class="text-primary font-medium mt-2">${tutor.subjects.join(
+                              ", "
+                            )}</p>
+                            <p class="text-gray-600 text-sm">${
+                              tutor.experience
+                            } experience</p>
+
                         </div>
                     </div>
                     <div class="md:w-2/3">
-                        <h2 class="text-2xl font-bold mb-4">About ${tutor.name}</h2>
+                        <h2 class="text-2xl font-bold mb-4">About ${
+                          tutor.name
+                        }</h2>
                         <p class="text-gray-700 mb-6">${tutor.bio}</p>
-                        
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div class="bg-gray-50 p-4 rounded-lg">
                                 <h3 class="font-semibold mb-2">Education</h3>
@@ -1137,105 +1414,134 @@
                                 <p class="text-gray-700">${tutor.location}</p>
                             </div>
                         </div>
-                        
+
                         <h3 class="text-xl font-bold mb-4">Subjects</h3>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            ${tutor.subjects.map(subject => `<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">${subject}</span>`).join('')}
-                        </div>                  
+                            ${tutor.subjects
+                              .map(
+                                (subject) =>
+                                  `<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">${subject}</span>`
+                              )
+                              .join("")}
+                        </div>
                     </div>
                 </div>
             `;
-            
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        // Close modal
-        document.getElementById('close-modal').addEventListener('click', function() {
-            document.getElementById('tutor-modal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
+
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      // Close modal
+      document
+        .getElementById("close-modal")
+        .addEventListener("click", function () {
+          document.getElementById("tutor-modal").classList.add("hidden");
+          document.body.style.overflow = "auto";
         });
-        
-        // Filter and search functionality
-        function applyFilters() {
-            const searchTerm = document.getElementById('tutor-search').value.toLowerCase();
-            const subjectFilter = document.getElementById('subject-filter').value;
-            const experienceFilter = document.getElementById('experience-filter').value;
-            const ratingFilter = document.getElementById('rating-filter').value;
-            const sortOption = document.getElementById('sort-option').value;
-            
-            // Filter tutors
-            filteredTutors = tutors.filter(tutor => {
-                // Search term filter
-                const matchesSearch = searchTerm === '' || 
-                    tutor.name.toLowerCase().includes(searchTerm) || 
-                    tutor.subjects.some(subject => subject.toLowerCase().includes(searchTerm)) ||
-                    tutor.bio.toLowerCase().includes(searchTerm);
-                
-                // Subject filter
-                const matchesSubject = subjectFilter === '' || 
-                    tutor.subjects.some(subject => subject === subjectFilter);
-                
-                // Experience filter
-                let matchesExperience = true;
-                if (experienceFilter !== '') {
-                    if (experienceFilter === '1-3') {
-                        matchesExperience = tutor.experienceYears === '1-3';
-                    } else if (experienceFilter === '4-7') {
-                        matchesExperience = tutor.experienceYears === '4-7';
-                    } else if (experienceFilter === '8-12') {
-                        matchesExperience = tutor.experienceYears === '8-12';
-                    } else if (experienceFilter === '13+') {
-                        matchesExperience = tutor.experienceYears === '13+';
-                    }
-                }
-                
-                // Rating filter
-                let matchesRating = true;
-                if (ratingFilter !== '') {
-                    matchesRating = tutor.rating >= parseInt(ratingFilter);
-                }
-                
-                return matchesSearch && matchesSubject && matchesExperience && matchesRating;
-            });
-            
-            // Sort tutors
-            if (sortOption === 'name-asc') {
-                filteredTutors.sort((a, b) => a.name.localeCompare(b.name));
-            } else if (sortOption === 'name-desc') {
-                filteredTutors.sort((a, b) => b.name.localeCompare(a.name));
-            } else if (sortOption === 'rating-desc') {
-                filteredTutors.sort((a, b) => b.rating - a.rating);
-            } else if (sortOption === 'experience-desc') {
-                filteredTutors.sort((a, b) => {
-                    const expOrder = { '1-3': 1, '4-7': 2, '8-12': 3, '13+': 4 };
-                    return expOrder[b.experienceYears] - expOrder[a.experienceYears];
-                });
+
+      // Filter and search functionality
+      function applyFilters() {
+        const searchTerm = document
+          .getElementById("tutor-search")
+          .value.toLowerCase();
+        const subjectFilter = document.getElementById("subject-filter").value;
+        const experienceFilter =
+          document.getElementById("experience-filter").value;
+        const ratingFilter = document.getElementById("rating-filter").value;
+        const sortOption = document.getElementById("sort-option").value;
+
+        // Filter tutors
+        filteredTutors = tutors.filter((tutor) => {
+          // Search term filter
+          const matchesSearch =
+            searchTerm === "" ||
+            tutor.name.toLowerCase().includes(searchTerm) ||
+            tutor.subjects.some((subject) =>
+              subject.toLowerCase().includes(searchTerm)
+            ) ||
+            tutor.bio.toLowerCase().includes(searchTerm);
+
+          // Subject filter
+          const matchesSubject =
+            subjectFilter === "" ||
+            tutor.subjects.some((subject) => subject === subjectFilter);
+
+          // Experience filter
+          let matchesExperience = true;
+          if (experienceFilter !== "") {
+            if (experienceFilter === "1-3") {
+              matchesExperience = tutor.experienceYears === "1-3";
+            } else if (experienceFilter === "4-7") {
+              matchesExperience = tutor.experienceYears === "4-7";
+            } else if (experienceFilter === "8-12") {
+              matchesExperience = tutor.experienceYears === "8-12";
+            } else if (experienceFilter === "13+") {
+              matchesExperience = tutor.experienceYears === "13+";
             }
-            
-            // Reset to first page and render
-            currentPage = 1;
-            renderTutors();
+          }
+
+          // Rating filter
+          let matchesRating = true;
+          if (ratingFilter !== "") {
+            matchesRating = tutor.rating >= parseInt(ratingFilter);
+          }
+
+          return (
+            matchesSearch &&
+            matchesSubject &&
+            matchesExperience &&
+            matchesRating
+          );
+        });
+
+        // Sort tutors
+        if (sortOption === "name-asc") {
+          filteredTutors.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (sortOption === "name-desc") {
+          filteredTutors.sort((a, b) => b.name.localeCompare(a.name));
+        } else if (sortOption === "rating-desc") {
+          filteredTutors.sort((a, b) => b.rating - a.rating);
+        } else if (sortOption === "experience-desc") {
+          filteredTutors.sort((a, b) => {
+            const expOrder = { "1-3": 1, "4-7": 2, "8-12": 3, "13+": 4 };
+            return expOrder[b.experienceYears] - expOrder[a.experienceYears];
+          });
         }
-        
-        // Add event listeners for filters
-        document.getElementById('tutor-search').addEventListener('input', applyFilters);
-        document.getElementById('subject-filter').addEventListener('change', applyFilters);
-        document.getElementById('experience-filter').addEventListener('change', applyFilters);
-        document.getElementById('rating-filter').addEventListener('change', applyFilters);
-        document.getElementById('sort-option').addEventListener('change', applyFilters);
-        
-        // Initial render
+
+        // Reset to first page and render
+        currentPage = 1;
         renderTutors();
-        
-        // Close modal when clicking outside
-        window.addEventListener('click', function(event) {
-            const modal = document.getElementById('tutor-modal');
-            if (event.target === modal) {
-                modal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }
-        });
+      }
+
+      // Add event listeners for filters
+      document
+        .getElementById("tutor-search")
+        .addEventListener("input", applyFilters);
+      document
+        .getElementById("subject-filter")
+        .addEventListener("change", applyFilters);
+      document
+        .getElementById("experience-filter")
+        .addEventListener("change", applyFilters);
+      document
+        .getElementById("rating-filter")
+        .addEventListener("change", applyFilters);
+      document
+        .getElementById("sort-option")
+        .addEventListener("change", applyFilters);
+
+      // Initial render
+      renderTutors();
+
+      // Close modal when clicking outside
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("tutor-modal");
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+          document.body.style.overflow = "auto";
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
