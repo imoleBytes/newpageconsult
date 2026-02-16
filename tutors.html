@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -1018,7 +1018,7 @@
           experience: "5+ years",
           experienceYears: "5-12",
           grade: "First Class",
-          bio: "Maryann is a pasMsionate, energetic educator specializing in English, ESL, phonics, and Digital SAT prep. Using innovative teaching methods, she makes learning engaging and effective, helping students master reading, writing, and elocution with confidence. Beyond academics, Maryann inspires a lifelong love for learning, tailoring her approach to each student’s needs. Let her spark your curiosity and guide you to success!",
+          bio: "Maryann is a passionate, energetic educator specializing in English, ESL, phonics, and Digital SAT prep. Using innovative teaching methods, she makes learning engaging and effective, helping students master reading, writing, and elocution with confidence. Beyond academics, Maryann inspires a lifelong love for learning, tailoring her approach to each student’s needs. Let her spark your curiosity and guide you to success!",
           education: "B.Ed English ABU, Zaria",
           location: "Available for online sessions",
         },
@@ -1911,8 +1911,8 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
 
           tutorCard.innerHTML = `
                     <img src="${tutor.photo}" alt="${
-            tutor.name
-          }" class="w-full h-64 object-cover">
+                      tutor.name
+                    }" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">${tutor.name}</h3>
@@ -1922,7 +1922,7 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
                         </div>
                         <div class="mb-4">
                             <p class="text-primary font-medium">${tutor.subjects.join(
-                              ", "
+                              ", ",
                             )}</p>
                             <p class="text-gray-600 text-sm">${
                               tutor.experience
@@ -1979,7 +1979,7 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
         const maxVisiblePages = 5;
         let startPage = Math.max(
           1,
-          currentPage - Math.floor(maxVisiblePages / 2)
+          currentPage - Math.floor(maxVisiblePages / 2),
         );
         let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
 
@@ -2084,17 +2084,17 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="md:w-1/3">
                         <img src="${tutor.photo}" alt="${
-          tutor.name
-        }" class="w-full h-auto rounded-lg">
+                          tutor.name
+                        }" class="w-full h-auto rounded-lg">
                         <div class="mt-4">
                             <div class="flex items-center justify-between">
                                 <h3 class="text-xl font-bold">${tutor.name}</h3>
                                 <span class="star-rating">${starsHtml} <span class="text-gray-700">(${
-          tutor.rating
-        })</span></span>
+                                  tutor.rating
+                                })</span></span>
                             </div>
                             <p class="text-primary font-medium mt-2">${tutor.subjects.join(
-                              ", "
+                              ", ",
                             )}</p>
                             <p class="text-gray-600 text-sm">${
                               tutor.experience
@@ -2124,7 +2124,7 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
                             ${tutor.subjects
                               .map(
                                 (subject) =>
-                                  `<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">${subject}</span>`
+                                  `<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">${subject}</span>`,
                               )
                               .join("")}
                         </div>
@@ -2162,7 +2162,7 @@ As a reflective and innovative teacher, he integrates modern teaching methods, t
             searchTerm === "" ||
             tutor.name.toLowerCase().includes(searchTerm) ||
             tutor.subjects.some((subject) =>
-              subject.toLowerCase().includes(searchTerm)
+              subject.toLowerCase().includes(searchTerm),
             ) ||
             tutor.bio.toLowerCase().includes(searchTerm);
 
